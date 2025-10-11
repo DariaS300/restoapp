@@ -1,0 +1,127 @@
+body {
+    background-color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background: linear-gradient(to right, #FEDD2C, #F9C201);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 16px 64px;
+}
+.logo {
+    background-image: url(src/Logo.png);
+    width: 137px;
+    height: 22px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 24px;
+} 
+
+nav a{
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    color: #555555;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;
+}
+
+.contacts p{
+    font-family: Inter;
+    font-size: 12px;
+    color: #555555;
+    margin: 0;
+}
+
+.contacts a{
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Inter;
+    color: #555555;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.home-container {
+    display: flex;
+    padding: 32px 64px;
+    margin: 0;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+}
+ 
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.category {
+    display: flex;
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    position: relative;
+    width: 304px;
+    height: 304px;
+    border-radius: 16px;
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.category-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+    border-radius: 16px;
+}
+
+.category-card span {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    z-index: 2;
+    font-size: 24px;
+    font-weight: 600;
+}
+

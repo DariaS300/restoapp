@@ -7,8 +7,20 @@ body {
 }
 
 header {
+    background: linear-gradient(to right, #FEDD2C, #F9C201);
     padding: 0;
     margin: 0;
+}
+
+.container {
+    justify-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 16px 64px;
+    max-width: 1440px; /* добавьте для центрирования */
+    margin: 0 auto; /* центрирует контейнер */
 }
 
 .container{

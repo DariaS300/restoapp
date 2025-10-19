@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="wrapper">
     <header>
-        <h1 class="visually-hidden">RestoApp</h1>
+        <div class="banner">
+                <p class="banner__text">Бесплатная доставка от 1 000 ₽</p>
+                <img class="xmark-icon" src="assets/src/x-mark.svg" alt="закрыть">
+        </div>
 
         <div class="container">
+            <h1 class="visually-hidden">RestoApp</h1>
             <a href="#" class="logo" aria-label="На главную страницу"><img src="assets/src/logo.svg" alt="Resto App Logo"></a>
             <nav>
                 <ul class="nav__list">
@@ -22,38 +27,158 @@
                     <li><a class="nav__link" href="#deliver">Зоны доставки</a></li>
                 </ul>
             </nav>
-            <div class="contacts">
-                <a href="tel:+79426974466" aria-label="Позвонить в ресторан">+0 (123) 456 78-90</a>
-                <p>Прием заказов с 10:00 до 22:40</p>
+            <div class="nav__right">
+                <div class="contacts">
+                    <a href="tel:+79426974466" aria-label="Позвонить в ресторан">+0 (123) 456 78-90</a>
+                    <p>Прием заказов с 10:00 до 22:40</p>
+                </div>
+                <div class="profile">
+                    <a href="#" class="icon-profile" aria-label="Профиль">
+                        <img src="assets/src/outline.svg" alt="icon-outline" class="Профиль">
+                    </a>
+                    <a href="#" class="icon-outline" aria-label="Корзина">
+                        <img src="assets/src/Default.svg" alt="icon-default" class="Корзина">
+                    </a>
+                </div>
             </div>
         </div>
     </header>
     <section class="home">
-        <div class="home__container">
+        <div class="container home__container">
             <h2>Меню</h2>
                 <ul class="category">
                     <li class="category-card">
-                        <img src="assets/src/image-01.jpg" alt="Пицца">
-                        <span>Пицца</span>
+                        <a href="#">
+                            <img class="category-photo" src="assets/src/image-01.jpg" alt="Пицца">
+                            <span>Пицца</span>
+                        </a>
                     </li>
                     <li class="category-card">
-                        <img src="assets/src/image-02.png" alt="Супы">
-                        <span>Супы</span>
-
+                        <a href="#">
+                            <img class="category-photo" src="assets/src/image-02.png" alt="Супы">
+                            <span>Супы</span>
+                        </a>
                     </li>
                     <li class="category-card">
-                        <img src="assets/src/image-03.jpg" alt="Горячие блюда">
-                        <span>Горячие блюда</span>
-                        
+                        <a href="#">
+                            <img class="category-photo" src="assets/src/image-03.jpg" alt="Горячие блюда">
+                            <span>Горячие блюда</span>
+                        </a>
                     </li>
                     <li class="category-card">
-                        <img src="assets/src/image-04.jpg" alt="Салаты">
-                        <span>Салаты</span>
+                        <a href="#">
+                            <img class="category-photo" src="assets/src/image-04.jpg" alt="Салаты">
+                            <span>Салаты</span>
+                        </a>
                     </li>
                 </ul>
         </div>
     </section>
-
+    <section class="new">
+        <div class="container new_container">
+            <h2>Новинки</h2>
+            <ul class="category">
+                <li class="category-card">
+                    <a href="#">
+                        <img class="category-photo" src="assets/src/image-05.jpg" alt="Китайский яичный суп">
+                        <img class="vegetarian-icon" src="assets/src/vegetarian.svg" alt="Вегетарианское">
+                        <div class="new_description">
+                            <h4>Китайский яичный суп</h4>
+                            <p class="description">Традиционный китайский суп с яйцом и томатами черри</p>
+                        </div>
+                    </a>
+                    <button class="new_button" type="button">350 ₽</button>
+                </li>
+                <li class="category-card">
+                    <a href="#">
+                        <img class="category-photo" src="assets/src/image-06.jpg" alt="Паэлья">
+                        <img class="vegetarian-icon" src="assets/src/vegetarian.svg" alt="Вегетарианское">
+                        <div class="new_description">
+                            <h4>Паэлья</h4>
+                            <p class="description">Традиционное испанское блюдо — рис, колбаски чоризо, куриное бедро, кальмар, кукуруза, горошек, специи</p>
+                        </div>
+                    </a>
+                    <button class="new_button" type="button">660 ₽</button>
+                </li>
+                <li class="category-card">
+                    <a href="#">
+                        <img class="category-photo" src="assets/src/image-07.jpg" alt="Биф Бургеньон">
+                        <div class="new_description">
+                            <h4>Биф Бургеньон</h4>
+                            <p class="description">Блюдо французской кухни — тушёные кусочки говядины с картофелем и болгарским перцем</p>
+                        </div>
+                    </a>
+                    <button class="new_button" type="button">630 ₽</button>
+                </li>
+                <li class="category-card">
+                    <a href="#">
+                        <img class="category-photo" src="assets/src/image-08.jpg" alt="Битые огурцы">
+                        <img class="vegetarian-icon" src="assets/src/vegetarian.svg" alt="Вегетарианское">
+                        <div class="new_description">
+                            <h4>Битые огурцы</h4>
+                            <p class="description">Салат из свежих битых огурцов с уйгурским соусом, кешью и кунжутом</p>
+                        </div>
+                    </a>
+                    <button class="new_button" type="button">320 ₽</button>
+                </li>
+            </ul>
+        </div>
+        
+    </section>
+    <section class="popular">
+        <div class="container popular_container">
+            <h2>Популярное</h2>
+            <ul class="category">
+                <li class="category-card">
+                    <a href="#">
+                        <img class="category-photo" src="assets/src/image-9.jpg" alt="Пепперони">
+                        <div class="new_description">
+                            <h4>Пепперони</h4>
+                            <p class="description">Просто и вкусно - томатная основа маринара, колбаски пепперони и сыр моцарелла</p>
+                        </div>
+                    </a>
+                    <button class="new_button" type="button">660 ₽</button>
+                </li>
+                <li class="category-card">
+                    <a href="#">
+                        <img class="category-photo" src="assets/src/image-10.jpg" alt="Груша Гонгонзола">
+                        <img class="vegetarian-icon" src="assets/src/vegetarian.svg" alt="Вегетарианское">
+                        <div class="new_description">
+                            <h4>Груша Гонгонзола</h4>
+                            <p class="description">Нежная пицца на основе сливочного соуса с сыром горгондзола, грушей, медом и кедровыми орехами</p>
+                        </div>
+                    </a>
+                    <button class="new_button" type="button">780 ₽</button>
+                </li>
+                <li class="category-card">
+                    <a href="#">
+                        <img class="category-photo" src="assets/src/image-02.png" alt="Фо Бо">
+                        <div class="new_description">
+                            <h4>Фо Бо</h4>
+                            <p class="description">Вьетнамский суп с рисовой лапшой, в котором используется говядина, свежая зелень и ростки сои. Подают с добавками, такими как мята, долька лайма, острый соус шрирача, азиатский уксус и лаоганма</p>
+                        </div>
+                    </a>
+                    <button class="new_button" type="button">490 ₽</button>
+                </li>
+                <li class="category-card">
+                    <a href="#">
+                        <img class="category-photo" src="assets/src/image-11.jpg" alt="Том Ям с морепродуктами">
+                        <div class="seafood-sharp">
+                            <img class="sharp-icon" src="assets/src/sharp.svg" alt="Острое">
+                            <img class="seafood-icon" src="assets/src/seafood.svg" alt="Морепродукты">
+                        </div>
+                        <div class="new_description">
+                            <h4>Том Ям с морепродуктами</h4>
+                            <p class="description">Традиционный тайский суп, на основе кокосового молока и сливок, с добавлением креветок, кальмаров, грибов шиитаке и шампиньонов, помидоров черри и свежей зелени. Подается с паровым тайским рисом</p>
+                        </div>
+                    </a>
+                    <button class="new_button" type="button">590 ₽</button>
+                </li>
+            </ul>
+        </div>
+        
+    </section>
+    </div>  
     
 </body>
 </html>

@@ -1,0 +1,112 @@
+.banner {
+    background-color: var(--bg-secondary);
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 0 auto; 
+}
+
+.banner__text {
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--bg-primary);
+    line-height: 1.5rem;
+}
+
+.xmark-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.xmark-icon svg {
+    width: 24px;
+    height: 24px;
+    color: var(--bg-primary);
+}
+
+header {
+    background: linear-gradient(to right, #FEDD2C, #F9C201);
+    width: 100%;
+}
+
+.logo {
+    width: 8.5625rem;
+    height: 1.375rem;
+}
+.nav__list {
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    gap: 1.5rem;
+}
+
+.nav__link {
+    font-weight: var(--font-weight-bold);
+    padding: 0.75rem 0;
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.nav__right {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.controls__link {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls svg {
+    width: 56px;
+    height: 48px;
+    display: block;
+}
+
+.controls path {
+    fill: currentColor;
+}
+
+.icon-profile,
+.icon-default {
+    color: var(--bg-secondary);
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contacts__p {
+    font-weight: var(--font-weight-normal);
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1rem;
+}
+
+.contacts__a {
+    font-family: 'Inter';
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    line-height: 1.5rem;
+}

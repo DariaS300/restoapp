@@ -6,179 +6,197 @@
     <title>Resto App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
     <div class="wrapper">
     <header>
+        <div class="main_header_container">
         <div class="banner">
-                <p class="banner__text">Бесплатная доставка от 1 000 ₽</p>
-                <img class="xmark-icon" src="assets/src/x-mark.svg" alt="закрыть">
+            <p class="banner__text">Бесплатная доставка от 1 000 ₽</p>
+            <a href="#" class="xmark-icon" aria-label="Закрыть">
+                <svg width="24" height="24">
+                    <use href="assets/photo/sprite.svg#xmark-icon"></use>
+                </svg>
+            </a>
         </div>
-
-        <div class="container">
-            <h1 class="visually-hidden">RestoApp</h1>
-            <a href="#" class="logo" aria-label="На главную страницу"><img src="assets/src/logo.svg" alt="Resto App Logo"></a>
-            <nav>
-                <ul class="nav__list">
-                    <li><a class="nav__link" href="#menu">Меню</a></li>
-                    <li><a class="nav__link" href="#promo">Акции</a></li>
-                    <li><a class="nav__link" href="#about">О нас</a></li>
-                    <li><a class="nav__link" href="#events">События</a></li>
-                    <li><a class="nav__link" href="#deliver">Зоны доставки</a></li>
-                </ul>
-            </nav>
-            <div class="nav__right">
-                <div class="contacts">
-                    <a href="tel:+79426974466" aria-label="Позвонить в ресторан">+0 (123) 456 78-90</a>
-                    <p>Прием заказов с 10:00 до 22:40</p>
-                </div>
-                <div class="profile">
-                    <a href="#" class="icon-profile" aria-label="Профиль">
-                        <img src="assets/src/outline.svg" alt="icon-outline" class="Профиль">
-                    </a>
-                    <a href="#" class="icon-outline" aria-label="Корзина">
-                        <img src="assets/src/Default.svg" alt="icon-default" class="Корзина">
-                    </a>
+            <div class="container">
+                <h1 class="visually-hidden">RestoApp - сайт для доставки вкусной еды прямиком из ресторана</h1>
+                <a href="#" class="logo" aria-label="На главную страницу"><img src="assets/photo/logo.svg" alt="Resto App Logo"></a>
+                <nav>
+                    <ul class="nav__list">
+                        <li><a class="nav__link" href="#menu">Меню</a></li>
+                        <li><a class="nav__link" href="#promo">Акции</a></li>
+                        <li><a class="nav__link" href="#about">О нас</a></li>
+                        <li><a class="nav__link" href="#events">События</a></li>
+                        <li><a class="nav__link" href="#deliver">Зоны доставки</a></li>
+                    </ul>
+                </nav>
+                <div class="nav__right">
+                    <div class="contacts">
+                        <a class="contacts__a" href="tel:+79426974466" aria-label="Позвонить в ресторан">+0 (123) 456 78-90</a>
+                        <p class="contacts__p">
+                            Прием заказов с <time>10:00</time> до <time>22:40</time>
+                        </p>
+                    </div>
+                    <div class="controls">
+                        <a href="#" class="controls__link icon-profile" aria-label="Профиль">
+                            <svg width="56" height="48">
+                                <use href="assets/photo/sprite.svg#icon-profile"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="controls__link icon-cart" aria-label="Корзина">
+                            <svg width="56" height="48">
+                                <use href="assets/photo/sprite.svg#icon-cart"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
-    <section class="home">
+    <section class="home" id="menu">
+        <div class="main_home_container">
         <div class="container home__container">
             <h2>Меню</h2>
                 <ul class="category">
                     <li class="category-card">
-                        <a href="#">
-                            <img class="category-photo" src="assets/src/image-01.jpg" alt="Пицца">
+                        <a class="category-card__link" href="#" aria-label="Перейти к разделу Пиццы">
+                            <img class="category-card__photo" src="assets/photo/image-01.avif" alt="Пицца" title="Пицца">
                             <span>Пицца</span>
                         </a>
                     </li>
                     <li class="category-card">
-                        <a href="#">
-                            <img class="category-photo" src="assets/src/image-02.png" alt="Супы">
+                        <a class="category-card__link" href="#" aria-label="Перейти к разделу Супов">
+                            <img class="category-card__photo" src="assets/photo/image-02.avif" alt="Супы" title="Супы">
                             <span>Супы</span>
                         </a>
                     </li>
                     <li class="category-card">
-                        <a href="#">
-                            <img class="category-photo" src="assets/src/image-03.jpg" alt="Горячие блюда">
+                        <a class="category-card__link" href="#" aria-label="Перейти к разделу Горячих блюд">
+                            <img class="category-card__photo" src="assets/photo/image-03.avif" alt="Горячие блюда" title="Горячие блюда">
                             <span>Горячие блюда</span>
                         </a>
                     </li>
                     <li class="category-card">
-                        <a href="#">
-                            <img class="category-photo" src="assets/src/image-04.jpg" alt="Салаты">
+                        <a class="category-card__link" href="#" aria-label="Перейти к разделу Салатов">
+                            <img class="category-card__photo" src="assets/photo/image-04.avif" alt="Салаты" title="Салаты">
                             <span>Салаты</span>
                         </a>
                     </li>
                 </ul>
         </div>
+    </div>
     </section>
     <section class="new">
+        <div class="main_new_container">
         <div class="container new_container">
             <h2>Новинки</h2>
             <ul class="category">
                 <li class="category-card">
-                    <a href="#">
-                        <img class="category-photo" src="assets/src/image-05.jpg" alt="Китайский яичный суп">
-                        <img class="vegetarian-icon" src="assets/src/vegetarian.svg" alt="Вегетарианское">
-                        <div class="new_description">
+                    <a class="category-card__link" href="#" aria-label="к блюду Китайский яичный суп">
+                        <img class="category-card__photo" src="assets/photo/image-05.avif" alt="Китайский яичный суп" title="Китайский яичный суп">
+                        <img class="vegetarian-icon" src="assets/photo/vegetarian.svg" alt="Вегетарианское" title="Вегетарианское">
+                        <div class="category-card__description">
                             <h4>Китайский яичный суп</h4>
-                            <p class="description">Традиционный китайский суп с яйцом и томатами черри</p>
+                            <p class="category-card__text">Традиционный китайский суп с яйцом и томатами черри</p>
                         </div>
                     </a>
-                    <button class="new_button" type="button">350 ₽</button>
+                    <button class="category-card__newbutton" type="button">350 ₽</button>
                 </li>
                 <li class="category-card">
-                    <a href="#">
-                        <img class="category-photo" src="assets/src/image-06.jpg" alt="Паэлья">
-                        <img class="vegetarian-icon" src="assets/src/vegetarian.svg" alt="Вегетарианское">
-                        <div class="new_description">
+                    <a class="category-card__link" href="#" aria-label="к блюду Паэлья">
+                        <img class="category-card__photo" src="assets/photo/image-06.avif" alt="Паэлья" title="Паэлья">
+                        <img class="vegetarian-icon" src="assets/photo/vegetarian.svg" alt="Вегетарианское" title="Вегетарианское">
+                        <div class="category-card__description">
                             <h4>Паэлья</h4>
-                            <p class="description">Традиционное испанское блюдо — рис, колбаски чоризо, куриное бедро, кальмар, кукуруза, горошек, специи</p>
+                            <p class="category-card__text">Традиционное испанское блюдо — рис, колбаски чоризо, куриное бедро, кальмар, кукуруза, горошек, специи</p>
                         </div>
                     </a>
-                    <button class="new_button" type="button">660 ₽</button>
+                    <button class="category-card__newbutton" type="button">660 ₽</button>
                 </li>
                 <li class="category-card">
-                    <a href="#">
-                        <img class="category-photo" src="assets/src/image-07.jpg" alt="Биф Бургеньон">
-                        <div class="new_description">
+                    <a class="category-card__link" href="#" aria-label="к блюду Биф Бургеньон">
+                        <img class="category-card__photo" src="assets/photo/image-07.avif" alt="Биф Бургеньон" title="Биф Бургеньон">
+                        <div class="category-card__description">
                             <h4>Биф Бургеньон</h4>
-                            <p class="description">Блюдо французской кухни — тушёные кусочки говядины с картофелем и болгарским перцем</p>
+                            <p class="category-card__text">Блюдо французской кухни — тушёные кусочки говядины с картофелем и болгарским перцем</p>
                         </div>
                     </a>
-                    <button class="new_button" type="button">630 ₽</button>
+                    <button class="category-card__newbutton" type="button">630 ₽</button>
                 </li>
                 <li class="category-card">
-                    <a href="#">
-                        <img class="category-photo" src="assets/src/image-08.jpg" alt="Битые огурцы">
-                        <img class="vegetarian-icon" src="assets/src/vegetarian.svg" alt="Вегетарианское">
-                        <div class="new_description">
+                    <a class="category-card__link" href="#" aria-label="к блюду Битые огурцы">
+                        <img class="category-card__photo" src="assets/photo/image-08.avif" alt="Битые огурцы" title="Битые огурцы">
+                        <img class="vegetarian-icon" src="assets/photo/vegetarian.svg" alt="Вегетарианское" title="Вегетарианское">
+                        <div class="category-card__description">
                             <h4>Битые огурцы</h4>
-                            <p class="description">Салат из свежих битых огурцов с уйгурским соусом, кешью и кунжутом</p>
+                            <p class="category-card__text">Салат из свежих битых огурцов с уйгурским соусом, кешью и кунжутом</p>
                         </div>
                     </a>
-                    <button class="new_button" type="button">320 ₽</button>
+                    <button class="category-card__newbutton" type="button">320 ₽</button>
                 </li>
             </ul>
         </div>
+    </div>
         
     </section>
     <section class="popular">
+        <div class="main_popular_container">
         <div class="container popular_container">
             <h2>Популярное</h2>
             <ul class="category">
                 <li class="category-card">
-                    <a href="#">
-                        <img class="category-photo" src="assets/src/image-9.jpg" alt="Пепперони">
-                        <div class="new_description">
+                    <a class="category-card__link" href="#" aria-label="к блюду Пепперони">
+                        <img class="category-card__photo" src="assets/photo/image-9.avif" alt="Пепперони" title="Пепперони">
+                        <div class="category-card__description">
                             <h4>Пепперони</h4>
-                            <p class="description">Просто и вкусно - томатная основа маринара, колбаски пепперони и сыр моцарелла</p>
+                            <p class="category-card__text">Просто и вкусно - томатная основа маринара, колбаски пепперони и сыр моцарелла</p>
                         </div>
                     </a>
-                    <button class="new_button" type="button">660 ₽</button>
+                    <button class="category-card__newbutton" type="button">660 ₽</button>
                 </li>
                 <li class="category-card">
-                    <a href="#">
-                        <img class="category-photo" src="assets/src/image-10.jpg" alt="Груша Гонгонзола">
-                        <img class="vegetarian-icon" src="assets/src/vegetarian.svg" alt="Вегетарианское">
-                        <div class="new_description">
+                    <a class="category-card__link" href="#" aria-label="к блюду Груша Горгонзола">
+                        <img class="category-card__photo" src="assets/photo/image-10.avif" alt="Груша Горгонзола" title="Груша Горгонзола">
+                        <img class="vegetarian-icon" src="assets/photo/vegetarian.svg" alt="Вегетарианское" title="Вегетарианское">
+                        <div class="category-card__description">
                             <h4>Груша Гонгонзола</h4>
-                            <p class="description">Нежная пицца на основе сливочного соуса с сыром горгондзола, грушей, медом и кедровыми орехами</p>
+                            <p class="category-card__text">Нежная пицца на основе сливочного соуса с сыром горгондзола, грушей, медом и кедровыми орехами</p>
                         </div>
                     </a>
-                    <button class="new_button" type="button">780 ₽</button>
+                    <button class="category-card__newbutton" type="button">780 ₽</button>
                 </li>
                 <li class="category-card">
-                    <a href="#">
-                        <img class="category-photo" src="assets/src/image-02.png" alt="Фо Бо">
-                        <div class="new_description">
+                    <a class="category-card__link" href="#" aria-label="к блюду Фо Бо">
+                        <img class="category-card__photo" src="assets/photo/image-02.avif" alt="Фо Бо" title="Фо Бо">
+                        <div class="category-card__description">
                             <h4>Фо Бо</h4>
-                            <p class="description">Вьетнамский суп с рисовой лапшой, в котором используется говядина, свежая зелень и ростки сои. Подают с добавками, такими как мята, долька лайма, острый соус шрирача, азиатский уксус и лаоганма</p>
+                            <p class="category-card__text">Вьетнамский суп с рисовой лапшой, в котором используется говядина, свежая зелень и ростки сои. Подают с добавками, такими как мята, долька лайма, острый соус шрирача, азиатский уксус и лаоганма</p>
                         </div>
                     </a>
-                    <button class="new_button" type="button">490 ₽</button>
+                    <button class="category-card__newbutton" type="button">490 ₽</button>
                 </li>
                 <li class="category-card">
-                    <a href="#">
-                        <img class="category-photo" src="assets/src/image-11.jpg" alt="Том Ям с морепродуктами">
+                    <a class="category-card__link" href="#" aria-label="к блюду Том Ям с морепродуктами">
+                        <img class="category-card__photo" src="assets/photo/image-11.avif" alt="Том Ям с морепродуктами" title="Том Ям с морепродуктами">
                         <div class="seafood-sharp">
-                            <img class="sharp-icon" src="assets/src/sharp.svg" alt="Острое">
-                            <img class="seafood-icon" src="assets/src/seafood.svg" alt="Морепродукты">
+                            <img class="sharp-icon" src="assets/photo/sharp.svg" alt="Острое" title="Острое">
+                            <img class="seafood-icon" src="assets/photo/seafood.svg" alt="Морепродукты" title="Морепродукты">
                         </div>
-                        <div class="new_description">
+                        <div class="category-card__description">
                             <h4>Том Ям с морепродуктами</h4>
-                            <p class="description">Традиционный тайский суп, на основе кокосового молока и сливок, с добавлением креветок, кальмаров, грибов шиитаке и шампиньонов, помидоров черри и свежей зелени. Подается с паровым тайским рисом</p>
+                            <p class="category-card__text">Традиционный тайский суп, на основе кокосового молока и сливок, с добавлением креветок, кальмаров, грибов шиитаке и шампиньонов, помидоров черри и свежей зелени. Подается с паровым тайским рисом</p>
                         </div>
                     </a>
-                    <button class="new_button" type="button">590 ₽</button>
+                    <button class="category-card__newbutton" type="button">590 ₽</button>
                 </li>
             </ul>
         </div>
+    </div>
         
     </section>
-    </div>  
+</div>
     
 </body>
 </html>

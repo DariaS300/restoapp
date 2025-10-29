@@ -1,0 +1,15 @@
+.category-card__newbutton {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 19rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    border: none;
+    background: var(--btncolor);
+    color: var(--bg-secondary);
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-bold);
+}

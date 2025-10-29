@@ -1,0 +1,9 @@
+.new_container {
+    display: flex;
+    padding-block: 2rem;    
+    padding-inline: 4rem; 
+    margin: 0;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+}

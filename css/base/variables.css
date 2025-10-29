@@ -1,0 +1,12 @@
+:root {
+    --text-primary: #727272;
+    --text-secondary: #555555;
+    --bg-primary: #fff;
+    --bg-secondary: #1C1C1C;;
+    --wrapWidth: 100rem;
+    --cont-max-width: 90rem;
+    --btncolor: #F4F4F4;
+
+    --font-weight-normal: 400;
+    --font-weight-bold: 600;
+}

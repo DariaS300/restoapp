@@ -52,3 +52,69 @@ h4 {
     margin: 0;
     line-height: 1.5rem;
 }
+
+.promotion-card__badges {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    display: flex;
+    gap: 0.5rem; 
+    z-index: 2;
+  }
+
+.promotion-card__date,
+.promotion-card__time,
+.promotion-card__discount {
+    padding: 0.5rem 0.75rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0.5rem;
+    line-height: 1.25rem;
+    color: var(--bg-primary);
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.promotion-card__discount {
+    background: rgba(0, 0, 0, 0.6); 
+}
+
+.promotion-card__title {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--bg-primary);
+    line-height: 2.5rem;
+    z-index: 2;
+    margin: 0;
+}
+
+.promotion-card__event--soon,
+.promotion-card__event--closed,
+.promotion-card__event--opened {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-bold);
+    z-index: 2;
+    line-height: 1.25rem;
+}
+
+.promotion-card__event--soon {
+    background: var(--badge-soon);
+    color: var(--bg-secondary);
+}
+
+.promotion-card__event--closed {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+}
+
+.promotion-card__event--opened {
+    background: var(--badge-soon);
+    color: var(--bg-secondary);
+}

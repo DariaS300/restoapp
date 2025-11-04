@@ -1,0 +1,22 @@
+.events_container{
+    display: flex;
+    padding-block: 2rem;    
+    padding-inline: 4rem; 
+    margin: 0;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.events__button {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-bold);
+    border: 2px solid var(--bg-secondary);
+    border-radius: 1rem;
+    background: transparent;
+    color: var(--bg-secondary);
+    cursor: pointer;
+    line-height: 1.5rem;
+  }

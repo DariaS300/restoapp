@@ -1,0 +1,32 @@
+.promotion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.promotion-card {
+    position: relative;
+    border-radius: 1rem;
+    height: 22.5rem;
+}
+
+.promotion-card__photo {
+    height: 22.5rem;
+    width: 40rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.promotion-card::after {
+    width: 100%;
+    height: 22.5rem;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 1rem;
+    pointer-events: none;
+}

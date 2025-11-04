@@ -63,3 +63,23 @@ body {
     width: 100%;
     min-width: var(--cont-max-width);
 }
+
+.main_stocks_container{
+    margin: 0 auto;
+    width: 100%;
+    min-width: var(--cont-max-width);
+}
+
+.main_events_container{
+    margin: 0 auto;
+    width: 100%;
+    min-width: var(--cont-max-width);
+}
+
+.main_restaurants_container{
+    margin: 0 auto;
+    width: 100%;
+    min-width: var(--cont-max-width);
+}
+
+

@@ -5,10 +5,10 @@
     padding: 1rem 2rem;
     width: 19rem;
     height: 3.5rem;
-    border-radius: 1rem;
+    border-radius: var(--border-radius-lg);
     border: none;
-    background: var(--btncolor);
-    color: var(--bg-secondary);
+    background: var(--color-background-tertiary);
+    color: var(--color-background-secondary);
     text-decoration: none;
     font-size: 1.125rem;
     font-weight: var(--font-weight-bold);

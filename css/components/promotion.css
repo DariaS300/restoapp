@@ -1,7 +1,7 @@
 .promotion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: var(--gap-lg);
     list-style: none;
     margin: 0;
     padding: 0;
@@ -9,15 +9,15 @@
 
 .promotion-card {
     position: relative;
-    border-radius: 1rem;
-    height: 22.5rem;
+    border-radius: var(--border-radius-lg);
+    min-height: 22.5rem;
 }
 
 .promotion-card__photo {
     height: 22.5rem;
     width: 40rem;
     object-fit: cover;
-    border-radius: 1rem;
+    border-radius: var(--border-radius-lg);
 }
 
 .promotion-card::after {
@@ -27,6 +27,6 @@
     position: absolute;
     inset: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
-    border-radius: 1rem;
+    border-radius: var(--border-radius-lg);
     pointer-events: none;
 }

@@ -13,7 +13,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-height: 2.8em;
-    color: var(--text-primary);
+    color: var(--color-text-primary);
     font-size: 1rem;
     font-weight: var(--font-weight-normal);
     padding: 0;
@@ -67,9 +67,9 @@ h4 {
 .promotion-card__discount {
     padding: 0.5rem 0.75rem;
     background: rgba(0, 0, 0, 0.6);
-    border-radius: 0.5rem;
+    border-radius: var(--border-radius-md);
     line-height: 1.25rem;
-    color: var(--bg-primary);
+    color: var(--color-background-primary);
     font-size: 0.875rem;
     font-weight: var(--font-weight-bold);
 }
@@ -84,7 +84,7 @@ h4 {
     left: 2rem;
     font-size: 2rem;
     font-weight: var(--font-weight-bold);
-    color: var(--bg-primary);
+    color: var(--color-background-primary);
     line-height: 2.5rem;
     z-index: 2;
     margin: 0;
@@ -97,7 +97,7 @@ h4 {
     top: 2rem;
     right: 2rem;
     padding: 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: var(--border-radius-md);
     font-size: 0.875rem;
     font-weight: var(--font-weight-bold);
     z-index: 2;
@@ -105,16 +105,16 @@ h4 {
 }
 
 .promotion-card__event--soon {
-    background: var(--badge-soon);
-    color: var(--bg-secondary);
+    background: var(--color-accent-yellow);
+    color: var(--color-background-secondary);
 }
 
 .promotion-card__event--closed {
-    background: var(--text-primary);
-    color: var(--bg-primary);
+    background: var(--color-text-primary);
+    color: var( --color-background-primary);
 }
 
 .promotion-card__event--opened {
-    background: var(--badge-soon);
-    color: var(--bg-secondary);
+    background: var(--color-accent-yellow);
+    color: var(--color-background-secondary);
 }

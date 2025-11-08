@@ -1,0 +1,19 @@
+@import url('normalize.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+@import url('base/font.css');
+@import url('base/base.css');
+@import url('base/variables.css');
+
+@import url('components/buttons.css');
+@import url('components/cards.css');
+@import url('components/category.css');
+@import url('components/header.css');
+@import url('components/promotion.css');
+
+@import url('sections/home.css');
+@import url('sections/new.css');
+@import url('sections/popular.css');
+@import url('sections/stocks.css');
+@import url('sections/events.css');
+@import url('sections/restaurants.css');

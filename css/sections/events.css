@@ -4,7 +4,7 @@
     padding-inline: 4rem; 
     margin: 0;
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--gap-lg);
     align-items: flex-start;
 }
 
@@ -13,10 +13,10 @@
     padding: 1rem 1.5rem;
     font-size: 1.125rem;
     font-weight: var(--font-weight-bold);
-    border: 2px solid var(--bg-secondary);
-    border-radius: 1rem;
+    border: 2px solid var( --color-background-secondary);
+    border-radius: var(--border-radius-lg);
     background: transparent;
-    color: var(--bg-secondary);
+    color: var( --color-background-secondary);
     cursor: pointer;
     line-height: 1.5rem;
   }

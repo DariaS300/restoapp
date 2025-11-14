@@ -4,6 +4,6 @@
     padding-inline: 4rem; 
     margin: 0;
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--gap-lg);
     align-items: flex-start;
 }

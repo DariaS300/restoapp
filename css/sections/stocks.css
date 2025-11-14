@@ -1,4 +1,4 @@
-.home__container {
+.stocks_container{
     display: flex;
     padding-block: 2rem;    
     padding-inline: 4rem; 
@@ -8,9 +8,4 @@
     align-items: flex-start;
 }
 
-h2 {
-    font-size: 2.5rem;
-    font-weight: var(--font-weight-bold);
-    margin: 0;
-    line-height: 3rem;
-}
+

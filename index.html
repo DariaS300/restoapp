@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resto App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="wrapper">
     <header>
-        <div class="main_header_container">
         <div class="banner">
             <p class="banner__text">Бесплатная доставка от 1 000 ₽</p>
             <a href="#" class="xmark-icon" aria-label="Закрыть">
@@ -20,6 +17,7 @@
                 </svg>
             </a>
         </div>
+        <div class="main_header_container">
             <div class="container">
                 <h1 class="visually-hidden">RestoApp - сайт для доставки вкусной еды прямиком из ресторана</h1>
                 <a href="#" class="logo" aria-label="На главную страницу"><img src="assets/photo/logo.svg" alt="Resto App Logo"></a>
@@ -62,25 +60,33 @@
                 <ul class="category">
                     <li class="category-card">
                         <a class="category-card__link" href="#" aria-label="Перейти к разделу Пиццы">
-                            <img class="category-card__photo" src="assets/photo/image-01.avif" alt="Пицца" title="Пицца">
+                            <picture>
+                                <img class="category-card__photo" src="assets/photo/image-01.avif" alt="Пицца" title="Пицца" loading="lazy">
+                            </picture>
                             <span>Пицца</span>
                         </a>
                     </li>
                     <li class="category-card">
                         <a class="category-card__link" href="#" aria-label="Перейти к разделу Супов">
-                            <img class="category-card__photo" src="assets/photo/image-02.avif" alt="Супы" title="Супы">
+                            <picture>
+                                <img class="category-card__photo" src="assets/photo/image-02.avif" alt="Супы" title="Супы" loading="lazy">
+                            </picture>
                             <span>Супы</span>
                         </a>
                     </li>
                     <li class="category-card">
                         <a class="category-card__link" href="#" aria-label="Перейти к разделу Горячих блюд">
-                            <img class="category-card__photo" src="assets/photo/image-03.avif" alt="Горячие блюда" title="Горячие блюда">
+                            <picture>
+                                <img class="category-card__photo" src="assets/photo/image-03.avif" alt="Горячие блюда" title="Горячие блюда" loading="lazy">
+                            </picture>
                             <span>Горячие блюда</span>
                         </a>
                     </li>
                     <li class="category-card">
                         <a class="category-card__link" href="#" aria-label="Перейти к разделу Салатов">
-                            <img class="category-card__photo" src="assets/photo/image-04.avif" alt="Салаты" title="Салаты">
+                            <picture>
+                                <img class="category-card__photo" src="assets/photo/image-04.avif" alt="Салаты" title="Салаты" loading="lazy">
+                            </picture>
                             <span>Салаты</span>
                         </a>
                     </li>
@@ -95,8 +101,10 @@
             <ul class="category">
                 <li class="category-card">
                     <a class="category-card__link" href="#" aria-label="к блюду Китайский яичный суп">
-                        <img class="category-card__photo" src="assets/photo/image-05.avif" alt="Китайский яичный суп" title="Китайский яичный суп">
-                        <img class="vegetarian-icon" src="assets/photo/vegetarian.svg" alt="Вегетарианское" title="Вегетарианское">
+                        <picture>
+                            <img class="category-card__photo" src="assets/photo/image-05.avif" alt="Китайский яичный суп" title="Китайский яичный суп" loading="lazy">
+                            <img class="vegetarian-icon" src="assets/photo/vegetarian.svg" alt="Вегетарианское" title="Вегетарианское" loading="lazy">
+                        </picture>
                         <div class="category-card__description">
                             <h4>Китайский яичный суп</h4>
                             <p class="category-card__text">Традиционный китайский суп с яйцом и томатами черри</p>
@@ -106,8 +114,10 @@
                 </li>
                 <li class="category-card">
                     <a class="category-card__link" href="#" aria-label="к блюду Паэлья">
-                        <img class="category-card__photo" src="assets/photo/image-06.avif" alt="Паэлья" title="Паэлья">
-                        <img class="vegetarian-icon" src="assets/photo/vegetarian.svg" alt="Вегетарианское" title="Вегетарианское">
+                        <picture>
+                            <img class="category-card__photo" src="assets/photo/image-06.avif" alt="Паэлья" title="Паэлья" loading="lazy">
+                            <img class="vegetarian-icon" src="assets/photo/vegetarian.svg" alt="Вегетарианское" title="Вегетарианское" loading="lazy">
+                        </picture>
                         <div class="category-card__description">
                             <h4>Паэлья</h4>
                             <p class="category-card__text">Традиционное испанское блюдо — рис, колбаски чоризо, куриное бедро, кальмар, кукуруза, горошек, специи</p>
@@ -117,7 +127,9 @@
                 </li>
                 <li class="category-card">
                     <a class="category-card__link" href="#" aria-label="к блюду Биф Бургеньон">
-                        <img class="category-card__photo" src="assets/photo/image-07.avif" alt="Биф Бургеньон" title="Биф Бургеньон">
+                        <picture>
+                            <img class="category-card__photo" src="assets/photo/image-07.avif" alt="Биф Бургеньон" title="Биф Бургеньон" loading="lazy">
+                        </picture>
                         <div class="category-card__description">
                             <h4>Биф Бургеньон</h4>
                             <p class="category-card__text">Блюдо французской кухни — тушёные кусочки говядины с картофелем и болгарским перцем</p>
@@ -127,8 +139,10 @@
                 </li>
                 <li class="category-card">
                     <a class="category-card__link" href="#" aria-label="к блюду Битые огурцы">
-                        <img class="category-card__photo" src="assets/photo/image-08.avif" alt="Битые огурцы" title="Битые огурцы">
-                        <img class="vegetarian-icon" src="assets/photo/vegetarian.svg" alt="Вегетарианское" title="Вегетарианское">
+                        <picture>
+                            <img class="category-card__photo" src="assets/photo/image-08.avif" alt="Битые огурцы" title="Битые огурцы" loading="lazy">
+                            <img class="vegetarian-icon" src="assets/photo/vegetarian.svg" alt="Вегетарианское" title="Вегетарианское" loading="lazy">
+                        </picture>
                         <div class="category-card__description">
                             <h4>Битые огурцы</h4>
                             <p class="category-card__text">Салат из свежих битых огурцов с уйгурским соусом, кешью и кунжутом</p>
@@ -148,7 +162,9 @@
             <ul class="category">
                 <li class="category-card">
                     <a class="category-card__link" href="#" aria-label="к блюду Пепперони">
-                        <img class="category-card__photo" src="assets/photo/image-9.avif" alt="Пепперони" title="Пепперони">
+                        <picture>
+                            <img class="category-card__photo" src="assets/photo/image-9.avif" alt="Пепперони" title="Пепперони" loading="lazy">
+                        </picture>
                         <div class="category-card__description">
                             <h4>Пепперони</h4>
                             <p class="category-card__text">Просто и вкусно - томатная основа маринара, колбаски пепперони и сыр моцарелла</p>
@@ -158,8 +174,10 @@
                 </li>
                 <li class="category-card">
                     <a class="category-card__link" href="#" aria-label="к блюду Груша Горгонзола">
-                        <img class="category-card__photo" src="assets/photo/image-10.avif" alt="Груша Горгонзола" title="Груша Горгонзола">
-                        <img class="vegetarian-icon" src="assets/photo/vegetarian.svg" alt="Вегетарианское" title="Вегетарианское">
+                        <picture>
+                            <img class="category-card__photo" src="assets/photo/image-10.avif" alt="Груша Горгонзола" title="Груша Горгонзола" loading="lazy">
+                            <img class="vegetarian-icon" src="assets/photo/vegetarian.svg" alt="Вегетарианское" title="Вегетарианское" loading="lazy">
+                        </picture>
                         <div class="category-card__description">
                             <h4>Груша Гонгонзола</h4>
                             <p class="category-card__text">Нежная пицца на основе сливочного соуса с сыром горгондзола, грушей, медом и кедровыми орехами</p>
@@ -169,7 +187,9 @@
                 </li>
                 <li class="category-card">
                     <a class="category-card__link" href="#" aria-label="к блюду Фо Бо">
-                        <img class="category-card__photo" src="assets/photo/image-02.avif" alt="Фо Бо" title="Фо Бо">
+                        <picture>
+                            <img class="category-card__photo" src="assets/photo/image-02.avif" alt="Фо Бо" title="Фо Бо" loading="lazy">
+                        </picture>
                         <div class="category-card__description">
                             <h4>Фо Бо</h4>
                             <p class="category-card__text">Вьетнамский суп с рисовой лапшой, в котором используется говядина, свежая зелень и ростки сои. Подают с добавками, такими как мята, долька лайма, острый соус шрирача, азиатский уксус и лаоганма</p>
@@ -179,10 +199,14 @@
                 </li>
                 <li class="category-card">
                     <a class="category-card__link" href="#" aria-label="к блюду Том Ям с морепродуктами">
-                        <img class="category-card__photo" src="assets/photo/image-11.avif" alt="Том Ям с морепродуктами" title="Том Ям с морепродуктами">
+                        <picture>
+                            <img class="category-card__photo" src="assets/photo/image-11.avif" alt="Том Ям с морепродуктами" title="Том Ям с морепродуктами" loading="lazy">
+                        </picture>
                         <div class="seafood-sharp">
-                            <img class="sharp-icon" src="assets/photo/sharp.svg" alt="Острое" title="Острое">
-                            <img class="seafood-icon" src="assets/photo/seafood.svg" alt="Морепродукты" title="Морепродукты">
+                            <picture>
+                                <img class="sharp-icon" src="assets/photo/sharp.svg" alt="Острое" title="Острое" loading="lazy">
+                                <img class="seafood-icon" src="assets/photo/seafood.svg" alt="Морепродукты" title="Морепродукты" loading="lazy">
+                            </picture>
                         </div>
                         <div class="category-card__description">
                             <h4>Том Ям с морепродуктами</h4>
@@ -195,7 +219,125 @@
         </div>
     </div>
         
-    </section>
+</section>
+
+<section class="stocks">
+    <div class="main_stocks_container">
+    <div class="container stocks_container">
+        <h2>Акции</h2>
+        <ul class="promotion">
+            <li class="promotion-card">
+                <a class="promotion-card__link" href="#" aria-label="Статус Platina привилегированным клиентам">
+                    <picture>
+                        <img class="promotion-card__photo" src="assets/photo/cardstocks1.webp" alt="Карта Platina" title="Статус Platina привилегированным клиентам" loading="lazy">
+                    </picture>
+                    <div class="promotion-card__badges">
+                        <span class="promotion-card__discount">Скидка 10%</span>
+                    </div>
+                    <h3 class="promotion-card__title">
+                        Статус «Platina»<br>привилегированным клиентам
+                    </h3>
+                </a>
+            </li>
+            <li class="promotion-card">
+                <a class="promotion-card__link" href="#" aria-label="Скидка на все покупки при регистрации">
+                    <picture>
+                        <img class="promotion-card__photo" src="assets/photo/cardstocks2.webp"  alt="Скидка" title="Скидка на все при регистрации" loading="lazy">
+                    </picture>
+                    <div class="promotion-card__badges">
+                        <span class="promotion-card__discount">Скидка 5%</span>
+                    </div>
+                    <h3 class="promotion-card__title">
+                        Скидка на все покупки при регистрации
+                    </h3>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+    
+</section>
+<section class="events">
+    <div class="main_events_container">
+    <div class="container events_container">
+        <h2>События</h2>
+        <ul class="promotion">
+            <li class="promotion-card">
+                <a class="promotion-card__link" href="#" aria-label="Первый в этом году Stand-Up">
+                    <picture>
+                        <img class="promotion-card__photo" src="assets/photo/cardevents1.webp"  alt="Stand-up" title="Первый в этом году Stand-up" loading="lazy">
+                    </picture>
+                    <div class="promotion-card__badges">
+                        <span class="promotion-card__date">27 января</span>
+                        <span class="promotion-card__time">В <time datetime="21:00">21:00</time></span>
+                    </div>
+                    <span class="promotion-card__event--soon">Скоро</span>
+                    <h3 class="promotion-card__title">
+                        Первый в этом году Stand-Up
+                    </h3>
+                </a>
+            </li>
+            <li class="promotion-card">
+                <a class="promotion-card__link" href="#" aria-label="День рождения в «Гастроцех»">
+                    <picture>
+                        <img class="promotion-card__photo" src="assets/photo/cardevents2.webp"  alt="День Рождения" title="День рождения в «Гастроцех»" loading="lazy">
+                    </picture>
+                    <div class="promotion-card__badges">
+                        <span class="promotion-card__date">21 января</span>
+                        <span class="promotion-card__discount">Скидка 20%</span>
+                    </div>
+                    <span class="promotion-card__event--closed">Завершено</span>
+                    <h3 class="promotion-card__title">
+                        День рождения в «Гастроцех»
+                    </h3>
+                </a>
+            </li>
+        </ul>
+        <button class="events__button" type="button">Все события</button>
+    </div>
+</div>
+    
+</section>
+<section class="restaurants">
+    <div class="main_restaurants_container">
+    <div class="container restaurants_container">
+        <h2>Наши заведения</h2>
+        <ul class="promotion">
+            <li class="promotion-card">
+                <a class="promotion-card__link" href="#" aria-label="Фудкорт — Кафе «Гастроцех»">
+                    <picture>
+                        <img class="promotion-card__photo" src="assets/photo/cardrestaurant1.webp" alt="Кафе - Гастроцех" title="Кафе - Гастроцех" loading="lazy">
+                    </picture>
+                    <div class="promotion-card__badges">
+                        <span class="promotion-card__date">Открыт еще 1 ч 20 мин</span>
+                        <span class="promotion-card__time">с <time datetime="21:00">10:00</time> до <time datetime="21:00">23:00</time></span>
+                    </div>
+                    <span class="promotion-card__event--opened">Открыт</span>
+                    <h3 class="promotion-card__title">
+                        Фудкорт — Кафе «Гастроцех»
+                    </h3>
+                </a>
+            </li>
+            <li class="promotion-card">
+                <a class="promotion-card__link" href="#" aria-label="«Гастроцех» Пицца">
+                    <picture>
+                        <img class="promotion-card__photo" src="assets/photo/cardrestaurant2.webp" alt="Гастроцех Пицца" title="Гастроцех Пицца" loading="lazy">
+                    </picture>
+                    <div class="promotion-card__badges">
+                        <span class="promotion-card__date">Открыт еще 1 ч 20 мин</span>
+                        <span class="promotion-card__time">с <time datetime="21:00">10:00</time> до <time datetime="21:00">23:00</time></span>
+                    </div>
+                    <span class="promotion-card__event--opened">Открыт</span>
+                    <h3 class="promotion-card__title">
+                        «Гастроцех» Пицца
+                    </h3>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+    
+</section>
 </div>
     
 </body>

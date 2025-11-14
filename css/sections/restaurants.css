@@ -1,9 +1,11 @@
-.new_container {
+.restaurants_container{
     display: flex;
-    padding-block: 2rem;    
+    padding-block: 2rem 4rem;    
     padding-inline: 4rem; 
     margin: 0;
     flex-direction: column;
     gap: var(--gap-lg);
     align-items: flex-start;
 }
+
+

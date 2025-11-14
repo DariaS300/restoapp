@@ -1,6 +1,10 @@
 .banner {
-    background-color: var(--bg-secondary);
-    min-height: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-background-secondary);
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +15,7 @@
 .banner__text {
     font-size: 1.125rem;
     font-weight: var(--font-weight-bold);
-    color: var(--bg-primary);
+    color: var(--color-background-primary);
     line-height: 1.5rem;
 }
 
@@ -24,10 +28,15 @@
 .xmark-icon svg {
     width: 24px;
     height: 24px;
-    color: var(--bg-primary);
+    color: var(--color-background-primary);
 }
 
 header {
+    position: sticky;
+    top: 3rem;
+    z-index: 1000;
+    width: 100%;
+    z-index: 1000;
     background: linear-gradient(to right, #FEDD2C, #F9C201);
     width: 100%;
 }
@@ -48,7 +57,7 @@ header {
     font-weight: var(--font-weight-bold);
     padding: 0.75rem 0;
     text-decoration: none;
-    color: var(--text-secondary);
+    color: var(--color-text-secondary);
     font-size: 1rem;
     text-align: center;
 }
@@ -85,7 +94,7 @@ header {
 
 .icon-profile,
 .icon-default {
-    color: var(--bg-secondary);
+    color: var(--color-background-secondary);
 }
 
 .contacts {
@@ -96,7 +105,7 @@ header {
 
 .contacts__p {
     font-weight: var(--font-weight-normal);
-    color: var(--text-secondary);
+    color: var(--color-text-secondary);
     margin: 0;
     line-height: 1rem;
 }
@@ -105,7 +114,7 @@ header {
     font-family: 'Inter';
     font-size: 1.125rem;
     text-decoration: none;
-    color: var(--text-secondary);
+    color: var(--color-text-secondary);
     font-weight: var(--font-weight-bold);
     text-transform: uppercase;
     line-height: 1.5rem;

@@ -5,6 +5,9 @@
     --color-background-primary: #fff;
     --color-background-secondary: #1C1C1C;
     --color-background-tertiary: #F4F4F4;
+
+    --color-footer-primary: #A6A6A6;
+    --color-footer-backround: #393939;
     
     --color-accent-yellow: #FEDD2C;
     
@@ -13,6 +16,8 @@
     
     --font-weight-normal: 400;
     --font-weight-bold: 600;
+    --font-size-large: 32px;
+    --font-size-medium: 24px;
     --font-size-base: 16px;
     --font-size-small: 14px;
     

@@ -11,6 +11,11 @@ body {
     padding-top: 3rem;
 }
 
+body.no-banner-padding {
+    padding-top: 0;
+    transition: padding-top 0.2s ease;
+}
+
 .wrapper {
     min-width: var(--layout-container-max-width);
     display: flex;
@@ -76,5 +81,11 @@ body {
     margin: 0 auto;
     min-width: var(--layout-container-max-width);
 }
+
+.main_footer_container{
+    margin: 0 auto;
+    min-width: var(--layout-container-max-width);
+}
+
 
 

@@ -12,6 +12,15 @@
     margin: 0 auto; 
 }
 
+
+.banner.hidden {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
 .banner__text {
     font-size: 1.125rem;
     font-weight: var(--font-weight-bold);
@@ -38,28 +47,57 @@ header {
     width: 100%;
     z-index: 1000;
     background: linear-gradient(to right, #FEDD2C, #F9C201);
-    width: 100%;
+}
+
+
+header.shift-up {
+    top: 0;          
+    transition: top .3s ease; 
 }
 
 .logo {
     width: 8.5625rem;
     height: 1.375rem;
 }
-.nav__list {
+
+.nav__list,
+.nav__list--footer {
     list-style: none;
     display: flex;
     margin: 0 auto;
     padding: 0;
-    gap: 1.5rem;
+    gap: var(--gap-md);
 }
 
-.nav__link {
+.nav__list--footer{
+    gap: var(--gap-lg);
+    margin: 0 auto;
+}
+
+.nav__link,
+.nav__link--footer{
     font-weight: var(--font-weight-bold);
     padding: 0.75rem 0;
     text-decoration: none;
     color: var(--color-text-secondary);
-    font-size: 1rem;
+    font-size: var(--font-size-base);
     text-align: center;
+    line-height: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.nav__link--footer{
+    padding: 0;
+    color: var(--color-background-tertiary);
+    transition: all 0.2s ease;
+}
+
+.nav__link:hover{
+    color: var(--color-background-secondary);
+}
+
+.nav__link--footer:hover{
+    color: var(--color-footer-primary);
 }
 
 .nav__right {
@@ -118,4 +156,9 @@ header {
     font-weight: var(--font-weight-bold);
     text-transform: uppercase;
     line-height: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.contacts__a:hover{
+    color: var(--color-background-secondary);
 }

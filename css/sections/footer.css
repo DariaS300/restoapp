@@ -130,6 +130,7 @@ footer{
     text-decoration: none;
     display: block; 
     line-height: 0; 
+    transition: filter 0.2s ease;
 }
 
 .market--google-play{
@@ -151,7 +152,7 @@ footer{
     transition: opacity 0.2s ease;
 } 
 
-.market--app-store:hover svg{
+.market--app-store:hover{
     filter: brightness(2);
 }
 

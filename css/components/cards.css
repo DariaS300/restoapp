@@ -105,7 +105,7 @@ h4 {
 }
 
 .promotion-card__event--soon {
-    background: var(--color-accent-yellow);
+    background: var(--color-accent);
     color: var(--color-background-secondary);
 }
 
@@ -115,6 +115,6 @@ h4 {
 }
 
 .promotion-card__event--opened {
-    background: var(--color-accent-yellow);
+    background: var(--color-accent);
     color: var(--color-background-secondary);
 }

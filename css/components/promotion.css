@@ -11,6 +11,8 @@
     position: relative;
     border-radius: var(--border-radius-lg);
     min-height: 22.5rem;
+    padding: 0;
+    margin: 0;
 }
 
 .promotion-card__photo {
@@ -29,4 +31,9 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
     border-radius: var(--border-radius-lg);
     pointer-events: none;
+}
+
+.promotion-card__link{
+    line-height: 0;     
+    font-size: 0;    
 }

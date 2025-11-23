@@ -8,7 +8,7 @@
 
 .category-card__text {
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 2.2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -19,6 +19,7 @@
     padding: 0;
     margin: 0;
     line-height: 1.5rem;
+    margin-bottom: 0.1875rem;
 }
 
 .vegetarian-icon {

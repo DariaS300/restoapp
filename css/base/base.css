@@ -55,5 +55,11 @@ body.no-banner-padding {
     min-width: var(--layout-container-max-width);
 }
 
+picture {
+    display: block;
+    line-height: 0;
+    font-size: 0;   
+}
+
 
 

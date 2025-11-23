@@ -89,13 +89,13 @@ header.shift-up {
     font-size: var(--font-size-base);
     text-align: center;
     line-height: 1.5rem;
-    transition: all 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .nav__link--footer{
     padding: 0;
     color: var(--color-background-tertiary);
-    transition: all 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .nav__link:hover{
@@ -176,7 +176,7 @@ header.shift-up {
     font-weight: var(--font-weight-bold);
     text-transform: uppercase;
     line-height: 1.5rem;
-    transition: all 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .contacts__a:hover{

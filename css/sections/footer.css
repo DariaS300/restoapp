@@ -187,7 +187,7 @@ footer{
     text-decoration: none;
     color: var(--color-text-muted);
     line-height: 1.25rem;
-    transition: all 0.2s ease;
+    transition: color 0.2s ease;
 
 }
 
@@ -196,12 +196,14 @@ footer{
 }
 
 .conditions{
+    font-size: var(--font-size-small);
     display: flex;
     align-items: center;
     gap: var(--gap-sm);
 }
 
 .copyright{
+    font-size: var(--font-size-small);
     margin: 0;
     color: var(--color-text-muted);
 }
@@ -220,7 +222,7 @@ footer{
     line-height: 1.25rem;
     margin: 0;
     padding: 0;
-    transition: all 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .footer__final-info:hover{
@@ -230,7 +232,7 @@ footer{
 
 .footer__final-link{
     color: var(--color-text-muted);
-    transition: all 0.2s ease;
+    transition: color 0.2s ease;
 }
 .footer__final-link:hover{
     color: var(--color-background-primary);

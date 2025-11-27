@@ -1,27 +1,35 @@
 :root {
     --color-text-primary: #727272;
     --color-text-secondary: #555555;
-    
+    --color-text-muted: #A6A6A6;
+
     --color-background-primary: #fff;
     --color-background-secondary: #1C1C1C;
     --color-background-tertiary: #F4F4F4;
-    
-    --color-accent-yellow: #FEDD2C;
-    
+    --color-bg-dark: #393939;
+
+    --color-accent: #FEDD2C;
+
     --layout-wrap-width: 100rem;
     --layout-container-max-width: 90rem;
-    
+
+
     --font-weight-normal: 400;
     --font-weight-bold: 600;
-    --font-size-base: 16px;
-    --font-size-small: 14px;
-    
+
+    --font-size-large: 2rem;   
+    --font-size-medium: 1.5rem;  
+    --font-size-base: 1rem;     
+    --font-size-small: 0.875rem; 
+    --font-size-very-small: 0.75rem;
+
     --gap-xs: 0.5rem;
     --gap-sm: 1rem;
     --gap-md: 1.5rem;
     --gap-lg: 2rem;
 
-    --border-radius-sm: 0.25rem;
-    --border-radius-md: 0.5rem;
-    --border-radius-lg: 1rem;
+    --border-radius-sm: 0.25rem;   
+    --border-radius-md: 0.5rem;  
+    --border-radius-lg: 1rem;       
 }
+

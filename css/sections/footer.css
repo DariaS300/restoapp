@@ -1,0 +1,240 @@
+.footer_container {
+    display: flex;
+    padding-block: 2rem;    
+    padding-inline: 4rem; 
+    margin: 0 auto;
+    flex-direction: column;
+    gap: var(--gap-lg);
+    align-items: center;
+    width: 100%;
+    max-width: var(--layout-container-max-width);
+}
+
+footer{
+    width: 100%;
+    background: var(--color-background-secondary);
+}
+
+.footer__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    margin: 0;
+}
+
+.footer-contacts__phone{
+    color: var(--color-background-tertiary);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+    line-height: 2rem;
+
+}
+
+.footer-contacts__phone:hover {
+    color: var(--color-text-muted);
+}
+
+.footer-contacts__time{
+    color: var(--color-text-muted);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-normal);
+    margin: 0;
+    line-height: 1.25rem;
+}
+
+.footer-socials{
+    display: flex;
+    gap: var(--gap-xs);
+    padding: 0;
+    margin: 0;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer__nav-logo{
+    display: flex;
+    width: 17.75rem;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+}
+
+.footer-socials__item--telegram,
+.footer-socials__item--vk,
+.footer-socials__item--whatsapp{
+    display: inline-flex;       
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;                 
+    height: 2.5rem;
+    border-radius: var(--border-radius-md);       
+    background-color: var(--color-bg-dark); 
+}
+
+.footer-socials__item--telegram svg,
+.footer-socials__item--vk svg,
+.footer-socials__item--whatsapp svg {
+    fill: var(--color-text-muted);
+    transition: fill 0.2s ease;
+}
+
+.footer-socials__item--telegram:hover svg,
+.footer-socials__item--vk:hover svg,
+.footer-socials__item--whatsapp:hover svg {
+    fill: var(--color-background-primary);
+
+}
+
+.visa-icon,
+.mastercard-icon,
+.mir-icon{
+    display: inline-flex;       
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg-dark); 
+    width: 3rem;                 
+    height: 1.8125rem;
+    border-radius: var(--border-radius-sm);
+}
+
+.footer__markets {
+    display: flex;
+    gap: var(--gap-xs);
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.market--app-store{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: block; 
+    line-height: 0; 
+    transition: filter 0.2s ease;
+}
+
+.market--google-play{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: block; 
+    line-height: 0; 
+    width: 138px;
+    height: 40px;
+}
+
+.google-play__default,
+.google-play__hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.2s ease;
+} 
+
+.market--app-store:hover{
+    filter: brightness(2);
+}
+
+.google-play__default {
+    opacity: 1;
+}
+
+.google-play__hover {
+    opacity: 0;
+}
+
+.market--google-play:hover .google-play__hover {
+    opacity: 1;
+}
+
+.market--google-play:hover .google-play__default {
+    opacity: 0;
+}
+  
+
+.footer__copyrights{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.conditions__link{
+    font-size: var(--font-size-small);
+    text-decoration: none;
+    color: var(--color-text-muted);
+    line-height: 1.25rem;
+    transition: color 0.2s ease;
+
+}
+
+.conditions__link:hover{
+    color: var(--color-background-primary);
+}
+
+.conditions{
+    font-size: var(--font-size-small);
+    display: flex;
+    align-items: center;
+    gap: var(--gap-sm);
+}
+
+.copyright{
+    font-size: var(--font-size-small);
+    margin: 0;
+    color: var(--color-text-muted);
+}
+
+.footer__basic-line{
+    border: none;
+    height: 1px;
+    background-color: var(--color-bg-dark);
+    width: 100%;
+    margin: 0;
+}
+
+.footer__final-info{
+    color: var(--color-text-muted);
+    font-size: var(--font-size-small);
+    line-height: 1.25rem;
+    margin: 0;
+    padding: 0;
+    transition: color 0.2s ease;
+}
+
+.footer__final-info:hover{
+    color: var(--color-background-primary);
+}
+
+
+.footer__final-link{
+    color: var(--color-text-muted);
+    transition: color 0.2s ease;
+}
+.footer__final-link:hover{
+    color: var(--color-background-primary);
+}
+

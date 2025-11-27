@@ -10,7 +10,7 @@
 
 .events__button {
     width: 100%;
-    padding: 1rem 1.5rem;
+    padding: 0.875rem 1.5rem;
     font-size: 1.125rem;
     font-weight: var(--font-weight-bold);
     border: 2px solid var( --color-background-secondary);

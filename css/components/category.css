@@ -47,6 +47,6 @@
     left: 1rem;
     color: var(--color-background-primary);
     z-index: 2;
-    font-size: 1.5rem;
+    font-size: var(--font-size-medium);
     font-weight: var(--font-weight-bold);
 }

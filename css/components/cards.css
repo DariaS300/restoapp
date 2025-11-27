@@ -8,17 +8,18 @@
 
 .category-card__text {
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 2.2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     max-height: 2.8em;
     color: var(--color-text-primary);
-    font-size: 1rem;
+    font-size: var(--font-size-base);
     font-weight: var(--font-weight-normal);
     padding: 0;
     margin: 0;
     line-height: 1.5rem;
+    margin-bottom: 0.1875rem;
 }
 
 .vegetarian-icon {
@@ -70,7 +71,7 @@ h4 {
     border-radius: var(--border-radius-md);
     line-height: 1.25rem;
     color: var(--color-background-primary);
-    font-size: 0.875rem;
+    font-size: var(--font-size-small);
     font-weight: var(--font-weight-bold);
 }
 
@@ -82,7 +83,7 @@ h4 {
     position: absolute;
     bottom: 2rem;
     left: 2rem;
-    font-size: 2rem;
+    font-size: var(--font-size-large);
     font-weight: var(--font-weight-bold);
     color: var(--color-background-primary);
     line-height: 2.5rem;
@@ -98,14 +99,14 @@ h4 {
     right: 2rem;
     padding: 0.5rem;
     border-radius: var(--border-radius-md);
-    font-size: 0.875rem;
+    font-size: var(--font-size-small);
     font-weight: var(--font-weight-bold);
     z-index: 2;
     line-height: 1.25rem;
 }
 
 .promotion-card__event--soon {
-    background: var(--color-accent-yellow);
+    background: var(--color-accent);
     color: var(--color-background-secondary);
 }
 
@@ -115,6 +116,6 @@ h4 {
 }
 
 .promotion-card__event--opened {
-    background: var(--color-accent-yellow);
+    background: var(--color-accent);
     color: var(--color-background-secondary);
 }

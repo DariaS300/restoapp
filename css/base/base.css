@@ -4,11 +4,19 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}  
+
 body {
     background-color: var(--color-background-primary);
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
-    padding-top: 3rem;
+}
+
+body.no-banner-padding {
+    padding-top: 0;
+    transition: padding-top 0.2s ease;
 }
 
 .wrapper {
@@ -42,39 +50,16 @@ body {
     max-width: var(--layout-container-max-width);
 }
 
-.main_header_container{
+.section-wrapper {
     margin: 0 auto;
     min-width: var(--layout-container-max-width);
 }
 
-.main_home_container{
-    margin: 0 auto;
-    min-width: var(--layout-container-max-width);
+picture {
+    display: block;
+    line-height: 0;
+    font-size: 0;   
 }
 
-.main_new_container{
-    margin: 0 auto;
-    min-width: var(--layout-container-max-width);
-}
-
-.main_popular_container{
-    margin: 0 auto;
-    min-width: var(--layout-container-max-width);
-}
-
-.main_stocks_container{
-    margin: 0 auto;
-    min-width: var(--layout-container-max-width);
-}
-
-.main_events_container{
-    margin: 0 auto;
-    min-width: var(--layout-container-max-width);
-}
-
-.main_restaurants_container{
-    margin: 0 auto;
-    min-width: var(--layout-container-max-width);
-}
 
 

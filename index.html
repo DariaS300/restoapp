@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class ="overlay"></div>
     <div class="wrapper">
     <header>
         <div class="banner">
             <p class="banner__text">Бесплатная доставка от 1 000 ₽</p>
             <button class="xmark-icon" aria-label="Закрыть">
                 <svg width="24" height="24">
-                    <use href="assets/photo/sprite.svg#xmark-icon"></use>
+                    <use href="assets/photo/sprite.svg#xmark-icon_banner"></use>
                 </svg>
             </button>
         </div>
@@ -21,8 +22,16 @@
             <div class="container">
                 <h1 class="visually-hidden">RestoApp - сайт для доставки вкусной еды прямиком из ресторана</h1>
                 <a href="#" class="logo" aria-label="На главную страницу"><img src="assets/photo/logo.svg" alt="Resto App Logo"></a>
-                <nav>
-                    <ul class="nav__list">
+                <button class="hamburger" aria-label="Открыть меню">
+                    <svg class="icon-hamburger" width="24" height="24">
+                        <use href="assets/photo/sprite.svg#hamburger"></use>
+                    </svg>
+                    <svg class="icon-close" width="24" height="24">
+                        <use href="assets/photo/sprite.svg#xmark-icon"></use>
+                    </svg>
+                </button>
+                <nav class = "menu" role="navigation">
+                    <ul class="nav__list" aria-hidden="true">
                         <li><a class="nav__link" href="#menu">Меню</a></li>
                         <li><a class="nav__link" href="#promo">Акции</a></li>
                         <li><a class="nav__link" href="#about">О нас</a></li>
@@ -53,9 +62,9 @@
             </div>
         </div>
     </header>
-    <section class="home" id="menu">
+    <section id="menu">
         <div class="section-wrapper">
-        <div class="container home__container">
+        <div class="container home_container">
             <h2>Меню</h2>
                 <ul class="category">
                     <li class="category-card">
@@ -366,17 +375,17 @@
             </div>
             <div class="footer-socials">
                 <a href="#" class="footer-socials__item--telegram" target="_blank" aria-label="Перейти в Телеграм">
-                    <svg width="24" height="24">
+                    <svg class = "footer__icon" width="24" height="24">
                         <use href="assets/photo/sprite.svg#footer-socials__item--telegram"></use>
                     </svg>
                 </a>
                 <a href="#" class="footer-socials__item--vk" target="_blank" aria-label="Перейти в ВК">
-                    <svg width="24" height="24">
+                    <svg class = "footer__icon" width="24" height="24">
                         <use href="assets/photo/sprite.svg#footer-socials__item--vk"></use>
                     </svg>
                 </a>
                 <a href="#" class="footer-socials__item--whatsapp" target="_blank" aria-label="Перейти в Ватсап">
-                    <svg width="24" height="24">
+                    <svg class = "footer__icon" width="24" height="24">
                         <use href="assets/photo/sprite.svg#footer-socials__item--whatsapp"></use>
                     </svg>
                 </a>

@@ -43,7 +43,7 @@ body.no-banner-padding {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 1rem;    /* вертикальные отступы */
+    padding-block: 1rem;  
     padding-inline: 4rem; 
     margin: 0 auto;
     width: 100%;
@@ -52,7 +52,6 @@ body.no-banner-padding {
 
 .section-wrapper {
     margin: 0 auto;
-    min-width: var(--layout-container-max-width);
 }
 
 picture {

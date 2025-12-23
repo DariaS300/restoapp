@@ -28,6 +28,14 @@
     line-height: 1.5rem;
 }
 
+.hamburger {
+    display: none;
+}
+
+.close-icon {
+    display: none;
+}
+
 .xmark-icon {
     background: none;
     border: none;
@@ -49,7 +57,6 @@ header {
     position: sticky;
     top: 0;
     padding-top: 3rem;
-    z-index: 1000;
     width: 100%;
     z-index: 1000;
     background: linear-gradient(to right, #FEDD2C, #F9C201);

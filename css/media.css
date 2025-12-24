@@ -61,6 +61,7 @@
         height: 100%;  
         top: 0px;
         right: 0px;
+        bottom: 0; 
         padding: 75px 60px 20px;
         width: 320px;
         background-color: #F9C201;

@@ -18,13 +18,6 @@ closeBtn.addEventListener('click', () => {
 
 hamburger.addEventListener('click', () => {
     const isOpen = navList.classList.toggle('opened');
-
-    if (isOpen) {
-        document.body.appendChild(menu);
-    } else {
-        // 🔥 добавлено: возвращение меню обратно
-        originalParent.appendChild(menu);
-    }
     hamburger.setAttribute('aria-label', isOpen? 'Закрыть меню' : 'Открыть меню');
     navList.setAttribute('aria-hidden', isOpen? 'false' : 'true');
     body.classList.toggle('menu-opened', isOpen);

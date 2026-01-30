@@ -21,6 +21,7 @@
     border-radius: 1rem;
     gap: var(--gap-sm);
     text-decoration: none;
+    overflow: hidden; 
 }
 
 .category-card__photo {
@@ -43,8 +44,9 @@
 
 .category-card span {
     position: absolute;
-    top: 16rem;
+    bottom: 1rem;
     left: 1rem;
+    margin-right: 1rem;
     color: var(--color-background-primary);
     z-index: 2;
     font-size: var(--font-size-medium);

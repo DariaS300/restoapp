@@ -18,12 +18,12 @@
                 </svg>
             </button>
         </div>
-        <div class="section-wrapper">
+        <div class="header-wrapper">
             <div class="container">
                 <h1 class="visually-hidden">RestoApp - сайт для доставки вкусной еды прямиком из ресторана</h1>
                 <a href="#" class="logo" aria-label="На главную страницу"><img src="assets/photo/logo.svg" alt="Resto App Logo"></a>
-                <button class="hamburger" aria-label="Открыть меню">
-                    <svg class="icon-hamburger" width="24" height="24">
+               <button class="hamburger" aria-label="Открыть меню">
+                   <svg class="icon-hamburger" width="24" height="24">
                         <use href="assets/photo/sprite.svg#hamburger"></use>
                     </svg>
                     <svg class="icon-close" width="24" height="24">
@@ -251,8 +251,10 @@
                         <source srcset="assets/photo/cardstocks1.webp" type="image/webp" class="promotion-card__photo">
                         <img class="promotion-card__photo" src="assets/photo/cardstocks1.webp" alt="Карта Platina" title="Статус Platina привилегированным клиентам" loading="lazy">
                     </picture>
+                    <div class="promotion-card__labels">
                     <div class="promotion-card__badges">
                         <span class="promotion-card__discount">Скидка 10%</span>
+                    </div>
                     </div>
                     <h3 class="promotion-card__title">
                         Статус «Platina»<br>привилегированным клиентам
@@ -265,8 +267,10 @@
                         <source srcset="assets/photo/cardstocks2.webp" type="image/webp" class="promotion-card__photo">
                         <img class="promotion-card__photo" src="assets/photo/cardstocks2.webp" alt="Скидка" title="Скидка на все при регистрации" loading="lazy">
                     </picture>
-                    <div class="promotion-card__badges">
-                        <span class="promotion-card__discount">Скидка 5%</span>
+                    <div class="promotion-card__labels">
+                        <div class="promotion-card__badges">
+                            <span class="promotion-card__discount">Скидка 5%</span>
+                        </div>
                     </div>
                     <h3 class="promotion-card__title">
                         Скидка на все покупки при регистрации
@@ -289,11 +293,13 @@
                         <source srcset="assets/photo/cardevents1.webp" type="image/webp" class="promotion-card__photo">
                         <img class="promotion-card__photo" src="assets/photo/cardevents1.webp" alt="Stand-up" title="Первый в этом году Stand-up" loading="lazy">
                     </picture>
-                    <div class="promotion-card__badges">
-                        <span class="promotion-card__date">27 января</span>
-                        <span class="promotion-card__time">В <time datetime="21:00">21:00</time></span>
+                    <div class="promotion-card__labels">
+                        <div class="promotion-card__badges">
+                            <span class="promotion-card__date">27 января</span>
+                            <span class="promotion-card__time">В <time datetime="21:00">21:00</time></span>
+                        </div>
+                        <span class="promotion-card__event--soon">Скоро</span>
                     </div>
-                    <span class="promotion-card__event--soon">Скоро</span>
                     <h3 class="promotion-card__title">
                         Первый в этом году Stand-Up
                     </h3>
@@ -305,11 +311,13 @@
                         <source srcset="assets/photo/cardevents2.webp" type="image/webp" class="promotion-card__photo">
                         <img class="promotion-card__photo" src="assets/photo/cardevents2.webp" alt="День Рождения" title="День рождения в «Гастроцех»" loading="lazy">
                     </picture>
-                    <div class="promotion-card__badges">
-                        <span class="promotion-card__date">21 января</span>
-                        <span class="promotion-card__discount">Скидка 20%</span>
+                    <div class="promotion-card__labels">
+                        <div class="promotion-card__badges">
+                            <span class="promotion-card__date">21 января</span>
+                            <span class="promotion-card__discount">Скидка 20%</span>
+                        </div>
+                        <span class="promotion-card__event--closed">Завершено</span>
                     </div>
-                    <span class="promotion-card__event--closed">Завершено</span>
                     <h3 class="promotion-card__title">
                         День рождения в «Гастроцех»
                     </h3>
@@ -332,11 +340,13 @@
                         <source srcset="assets/photo/cardrestaurant1.webp" type="image/webp" class="promotion-card__photo">
                         <img class="promotion-card__photo" src="assets/photo/cardrestaurant1.webp" alt="Кафе - Гастроцех" title="Кафе - Гастроцех" loading="lazy">
                     </picture>
-                    <div class="promotion-card__badges">
-                        <span class="promotion-card__date">Открыт еще 1 ч 20 мин</span>
-                        <span class="promotion-card__time">с <time datetime="21:00">10:00</time> до <time datetime="21:00">23:00</time></span>
-                    </div>
-                    <span class="promotion-card__event--opened">Открыт</span>
+                    <div class="promotion-card__labels">
+                        <div class="promotion-card__badges">    
+                            <span class="promotion-card__date">Открыт еще 1 ч 20 мин</span>
+                            <span class="promotion-card__time">с <time datetime="21:00">10:00</time> до <time datetime="21:00">23:00</time></span>
+                        </div>
+                        <span class="promotion-card__event--opened">Открыт</span>
+                     </div>
                     <h3 class="promotion-card__title">
                         Фудкорт — Кафе «Гастроцех»
                     </h3>
@@ -348,11 +358,13 @@
                         <source srcset="assets/photo/cardrestaurant2.webp" type="image/webp" class="promotion-card__photo">
                         <img class="promotion-card__photo" src="assets/photo/cardrestaurant2.webp" alt="Гастроцех Пицца" title="Гастроцех Пицца" loading="lazy">
                     </picture>
-                    <div class="promotion-card__badges">
-                        <span class="promotion-card__date">Открыт еще 1 ч 20 мин</span>
-                        <span class="promotion-card__time">с <time datetime="21:00">10:00</time> до <time datetime="21:00">23:00</time></span>
+                    <div class="promotion-card__labels">
+                        <div class="promotion-card__badges">
+                            <span class="promotion-card__date">Открыт еще 1 ч 20 мин</span>
+                            <span class="promotion-card__time">с <time datetime="21:00">10:00</time> до <time datetime="21:00">23:00</time></span>
+                        </div>
+                        <span class="promotion-card__event--opened">Открыт</span>
                     </div>
-                    <span class="promotion-card__event--opened">Открыт</span>
                     <h3 class="promotion-card__title">
                         «Гастроцех» Пицца
                     </h3>

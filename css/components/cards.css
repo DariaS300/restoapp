@@ -55,10 +55,8 @@ h4 {
 }
 
 .promotion-card__badges {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
     display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem; 
     z-index: 2;
   }
@@ -83,6 +81,7 @@ h4 {
     position: absolute;
     bottom: 2rem;
     left: 2rem;
+    right: 2rem;
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-bold);
     color: var(--color-background-primary);
@@ -94,9 +93,6 @@ h4 {
 .promotion-card__event--soon,
 .promotion-card__event--closed,
 .promotion-card__event--opened {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
     padding: 0.5rem;
     border-radius: var(--border-radius-md);
     font-size: var(--font-size-small);
@@ -118,4 +114,17 @@ h4 {
 .promotion-card__event--opened {
     background: var(--color-accent);
     color: var(--color-background-secondary);
+}
+
+.promotion-card__labels {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    right: 2rem;
+    justify-content: space-between;
+
+    display: flex;       
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    z-index: 2;
 }

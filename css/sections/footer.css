@@ -62,7 +62,8 @@ footer{
 
 .footer__nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    gap: 0.75rem;
     align-items: center;
     padding: 0;
     margin: 0 auto;
@@ -122,6 +123,7 @@ footer{
     margin: 0;
     align-items: center;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .market--app-store{
@@ -175,8 +177,10 @@ footer{
 
 .footer__copyrights{
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    gap: 0.75rem;
     justify-content: space-between;
     width: 100%;
     align-items: center;
@@ -198,9 +202,18 @@ footer{
 .conditions{
     font-size: var(--font-size-small);
     display: flex;
+    flex-wrap: wrap;
+    margin: 0;
     align-items: center;
     gap: var(--gap-sm);
 }
+
+.pay{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
 
 .copyright{
     font-size: var(--font-size-small);
@@ -228,7 +241,6 @@ footer{
 .footer__final-info:hover{
     color: var(--color-background-primary);
 }
-
 
 .footer__final-link{
     color: var(--color-text-muted);

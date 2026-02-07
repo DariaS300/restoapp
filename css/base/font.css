@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Inter';
-    src: url('/assets/fonts/inter-Regular.otf') format('opentype');
+    src: url('../../assets/fonts/inter-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url('/assets/fonts/inter-SemiBold.otf') format('opentype');
+    src: url('../../assets/fonts/inter-SemiBold.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
 }

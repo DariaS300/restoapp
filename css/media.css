@@ -1,50 +1,101 @@
-@media (max-width: 992px) {
-
-    .wrapper{
-        overflow-x: hidden;
-        width: 100%;
-        position: relative;
+@media (max-width: 1200px){
+    .category {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .category-card__photo{
-        width: 25rem;
+        width: 75rem;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        padding-inline: 2rem; 
+    }
+
+    .events_container,
+    .footer_container,
+    .home_container,
+    .stocks_container,
+    .new_container,
+    .popular_container,
+    .restaurants_container
+    { 
+        padding-inline: 2rem; 
+    }
+
+    .category-card__photo{
+        width: 28rem;
         max-width: 100%;
     }
 
     .hamburger {
-        position: relative;
-        width: 24px;    
-        height: 24px;
         display: block;
-        background: none;
-        border: none;
-        padding: 20px 0px 20px 20px;
-        z-index: 3003;  
-        transition: opacity .3s;
+        position: relative;
+        padding: 10px;
+        background: transparent;
+        border: 1px solid transparent;
+        margin: 7px 0;
+        top: 50%;
+        z-index: 3003;
     }
 
-    .icon-hamburger{
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 1;
-        transition: opacity .3s;
-    }
+    .hamburger:focus {
+        outline-width: 0;
+      }
 
-    .icon-close{
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
+    .hamburger [class*='bar-'] {
+        background: var(--color-background-secondary);
+        display: block;
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+        -webkit-transition: .2s ease all;
+        transition: .2s ease all;
+        border-radius: 0.25rem;
+        height: 0.25rem;
+        width: 1.625rem;
+        margin-bottom: 0.25rem;}
+
+    .hamburger .bar-bot {
+        margin-bottom: 0;
+        }
+
+    body.menu-opened  .bar-top {
+        -webkit-transform: rotate(45deg);
+                transform: translateY(2px) rotate(45deg);
+        -webkit-transform-origin: 15% 15%;
+                transform-origin: 15% 15%;
+        background: var(--color-text-secondary);
+    }
+    body.menu-opened .bar-mid {
         opacity: 0;
-        transition: opacity .5s;
+    }
+    body.menu-opened .bar-bot {
+        -webkit-transform: rotate(45deg);
+                transform: translateY(-2px) rotate(-45deg);
+        -webkit-transform-origin: 15% 95%;
+                transform-origin: 15% 95%;
+        background: var(--color-text-secondary);
+
+        
     }
 
     header {
-        position: relative;
+        position: sticky;
         z-index: 3001;
         width: 100%;
+        top: 0;
+        padding-top: 3rem;
+    }
+
+    .banner{
+        z-index: 3003;
     }
 
     .nav__right{
@@ -63,6 +114,7 @@
         display: flex;
         flex-direction: column;
         transform: translateX(100%);
+        opacity: 0;
         transition: transform .5s;
         z-index: 3002;  
     }
@@ -97,30 +149,14 @@
         text-decoration: underline;
     }
 
-    .overlay{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.5);
-        display: none;
-        z-index: 1500;
+    body.menu-opened .overlay {
+        opacity: 1;
         pointer-events: auto;
     }
-    body.menu-opened .overlay {
-        display: block;
-    }
 
-    body.menu-opened .icon-hamburger{
-        opacity: 0;
-    } 
-
-    body.menu-opened .icon-close{
-        opacity: 1;
-    } 
     body.menu-opened .menu{
         transform: translateX(0);
+        opacity: 1;
     } 
     body.menu-opened{
         overflow-y: hidden;
@@ -190,8 +226,13 @@
         grid-template-columns: repeat(1, 1fr);
     }
     .category-card__photo{
-        width: 40rem;
+        width: 44rem;
         max-width: 100%;
+    }
+
+    .banner__text{
+        font-size: var(--font-size-base);
+        margin-left: 1rem;
     }
 
 
@@ -260,5 +301,9 @@
         left: 1rem;
     }
 
+    .banner__text{
+        margin: 1rem;
+        margin-right: 0;
+    }
 
 }

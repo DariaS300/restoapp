@@ -17,11 +17,13 @@ closeBtn.addEventListener('click', () => {
 });
 
 hamburger.addEventListener('click', () => {
-        const isOpen = navList.classList.toggle('opened');
-        hamburger.setAttribute('aria-label', isOpen? 'Закрыть меню' : 'Открыть меню');
-        navList.setAttribute('aria-hidden', isOpen? 'false' : 'true');
-        body.classList.toggle('menu-opened', isOpen);
+    hamburger.classList.toggle('menu-opened');
+    const isOpen = navList.classList.toggle('opened');
+    hamburger.setAttribute('aria-label', isOpen? 'Закрыть меню' : 'Открыть меню');
+    navList.setAttribute('aria-hidden', isOpen? 'false' : 'true');
+    body.classList.toggle('menu-opened', isOpen);
 });
+
 
 overlay.addEventListener('click', ()=>{
     body.classList.remove('menu-opened');

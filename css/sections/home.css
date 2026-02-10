@@ -6,6 +6,7 @@
     flex-direction: column;
     gap: var(--gap-lg);
     align-items: flex-start;
+    scroll-margin-top: 7rem;
 }
 
 h2 {
@@ -13,4 +14,8 @@ h2 {
     font-weight: var(--font-weight-bold);
     margin: 0;
     line-height: 3rem;
+}
+
+#menu {
+    scroll-margin-top: 7rem;
 }

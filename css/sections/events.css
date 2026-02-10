@@ -7,6 +7,7 @@
     gap: var(--gap-lg);
     align-items: flex-start;
     width: 100%;
+    scroll-margin-top: 7rem;
 }
 
 .events__button {
@@ -21,3 +22,12 @@
     cursor: pointer;
     line-height: 1.5rem;
   }
+
+.events__button:hover{
+    background: var(--color-background-secondary);
+    color: var(--color-background-primary);
+}
+
+#events {
+    scroll-margin-top: 7rem;
+}

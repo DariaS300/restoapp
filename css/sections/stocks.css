@@ -6,6 +6,10 @@
     flex-direction: column;
     gap: var(--gap-lg);
     align-items: flex-start;
+    scroll-margin-top: 7rem;
 }
 
+#promo {
+    scroll-margin-top: 7rem;
+}
 

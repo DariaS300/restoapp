@@ -212,6 +212,7 @@ footer{
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 
@@ -238,9 +239,6 @@ footer{
     transition: color 0.2s ease;
 }
 
-.footer__final-info:hover{
-    color: var(--color-background-primary);
-}
 
 .footer__final-link{
     color: var(--color-text-muted);

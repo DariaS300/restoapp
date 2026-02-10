@@ -10,14 +10,12 @@
     justify-content: center;
     gap: 0.75rem;
     margin: 0 auto; 
+    transition: transform .3s ease;
 }
 
 
 .banner.hidden {
-    opacity: 0;
-    visibility: hidden;
-    height: 0;
-    padding: 0;
+    transform: translateY(-100%);
     overflow: hidden;
 }
 
@@ -61,6 +59,7 @@ header {
     width: 100%;
     z-index: 1000;
     background: linear-gradient(to right, #FEDD2C, #F9C201);
+    transition: padding-top .3s ease; 
 }
 
 .header-wrapper{
@@ -71,7 +70,6 @@ header {
 
 header.shift-up {
     padding-top: 0;          
-    transition: top .3s ease; 
 }
 
 .logo {
@@ -100,6 +98,7 @@ header.shift-up {
 .nav__link,
 .nav__link--footer{
     display: inline-block; /* или inline-flex */
+    white-space: nowrap;
     text-align: center;
     font-weight: var(--font-weight-bold);
     padding: 0.75rem 0;
@@ -126,17 +125,19 @@ header.shift-up {
 }
 
 .nav__right {
-    display: flex;
-    gap: 4rem;
-    align-items: center;
-    flex-shrink: 0;
+    display: flex; 
+    justify-content: space-between ; 
+    width: 100%;  
+    gap: 1.5rem;
+    max-width: 23.75rem; 
+    align-items: center; 
     margin-left: 1rem;
-
 }
 
 .controls {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -171,6 +172,14 @@ header.shift-up {
     color: var(--color-background-secondary);
 }
 
+.icon-profile {
+    color: var(--color-background-secondary);
+}
+
+.icon-profile:hover{
+    color: var(--color-background-primary);
+}
+
 .controls svg {
     display: block;
 }
@@ -179,6 +188,7 @@ header.shift-up {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    flex-shrink: 0;
 }
 
 .contacts__p {

@@ -1,4 +1,4 @@
-.home_container {
+.home {
     display: flex;
     padding-block: var(--space-lg);    
     padding-inline: var(--space-lg); 
@@ -21,7 +21,7 @@ h2 {
 }
 
 @media (max-width: 1200px){
-    .home_container {
+    .home {
         padding-block: var(--space-md);    
         padding-inline: var(--space-lg); 
     }
@@ -30,7 +30,7 @@ h2 {
 
 @media (max-width: 992px) {
 
-    .home_container { 
+    .home { 
         padding-block: var(--space-md);
         padding-inline: var(--space-md); 
     }
@@ -59,7 +59,7 @@ h2 {
 
 @media (max-width: 576px) {
 
-    .home_container { 
+    .home { 
         padding-bottom: var(--space-sm);
         padding-inline: var(--space-sm); 
     }

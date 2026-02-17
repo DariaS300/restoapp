@@ -4,7 +4,7 @@ const body = document.body;
 const header = document.querySelector('header');
 const hamburger = document.querySelector('.hamburger');
 const navList = document.querySelector('.nav__list');
-const menu = document.querySelector('.menu');
+const menu = document.querySelector('.nav');
 const overlay = document.querySelector('.overlay');
 
 const originalParent = menu.parentElement;

@@ -1,4 +1,4 @@
-.popular_container {
+.popular {
     display: flex;
     padding-block: var(--space-lg);    
     padding-inline: var(--space-lg); 
@@ -11,7 +11,7 @@
 
 @media (max-width: 992px) {
 
-    .popular_container { 
+    .popular { 
         padding-block: var(--space-md);
         padding-inline: var(--space-md); 
     }
@@ -19,7 +19,7 @@
 
 @media (max-width: 576px) {
 
-    .popular_container { 
+    .popular { 
         padding-block: var(--space-sm);
         padding-inline: var(--space-sm); 
     }

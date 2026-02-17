@@ -76,7 +76,7 @@ body.no-banner-padding {
     position: relative;
 }
 
-.container-header{
+.header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;

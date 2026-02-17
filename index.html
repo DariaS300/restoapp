@@ -19,7 +19,7 @@
             </button>
         </div>
         <div class="header-wrapper">
-            <div class="container-header">
+            <div class="header-container">
                 <h1 class="visually-hidden">RestoApp - сайт для доставки вкусной еды прямиком из ресторана</h1>
                 <a href="#" class="logo" aria-label="На главную страницу"><img src="assets/photo/logo.svg" alt="Resto App Logo"></a>
                <button class="hamburger" aria-label="Открыть меню">
@@ -27,7 +27,7 @@
                     <span class="bar-mid"></span>
                     <span class="bar-bot"></span>
                 </button>
-                <nav class = "menu">
+                <nav class = "nav">
                     <ul class="nav__list">
                         <li><a class="nav__link" href="#menu">Меню</a></li>
                         <li><a class="nav__link" href="#promo">Акции</a></li>
@@ -36,7 +36,7 @@
                         <li><a class="nav__link" href="#deliver">Зоны доставки</a></li>
                     </ul>
                 </nav>
-                <div class="nav__right">
+                <div class="nav-right">
                     <div class="contacts">
                         <a class="contacts__a" href="tel:+0(123)45678-90" aria-label="Позвонить в ресторан">+0 (123) 456 78-90</a>
                         <p class="contacts__p">
@@ -62,7 +62,7 @@
 <main>
     <section id="menu">
         <div class="section-wrapper">
-            <div class="container home_container">
+            <div class="container home">
                 <h2>Меню</h2>
                 <ul class="category">
                     <li>
@@ -116,7 +116,7 @@
 
     <section class="new">
         <div class="section-wrapper">
-        <div class="container new_container">
+        <div class="container new">
             <h2>Новинки</h2>
             <ul class="category">
                 <li>
@@ -189,7 +189,7 @@
     </section>
     <section class="popular">
         <div class="section-wrapper">
-        <div class="container popular_container">
+        <div class="container popular">
             <h2>Популярное</h2>
             <ul class="category">
                 <li>
@@ -265,7 +265,7 @@
 
     <section class="stocks" id="promo">
         <div class="section-wrapper">
-        <div class="container stocks_container">
+        <div class="container stocks">
             <h2>Акции</h2>
             <ul class="promotion">
                 <li>
@@ -311,7 +311,7 @@
     </section>
     <section class="events" id="events">
         <div class="section-wrapper">
-        <div class="container events_container">
+        <div class="container events">
             <h2>События</h2>
             <ul class="promotion">
                 <li>
@@ -362,7 +362,7 @@
     </section>
     <section class="restaurants" id="about">
         <div class="section-wrapper">
-        <div class="container restaurants_container">
+        <div class="container restaurants">
             <h2>Наши заведения</h2>
             <ul class="promotion">
                 <li>
@@ -413,26 +413,26 @@
 </main>
 <footer>
     <div class="section-wrapper">
-    <div class="container footer_container">
+    <div class="container footer">
         <div class="footer__info">
-            <div class="footer-contact">
-                <a class="footer-contacts__phone" href="tel:+79426974466" aria-label="Позвонить в ресторан">+0 (123) 456 78-90</a>
-                <p class="footer-contacts__time">
+            <div class="footer__contact">
+                <a class="footer__contact-phone" href="tel:+79426974466" aria-label="Позвонить в ресторан">+0 (123) 456 78-90</a>
+                <p class="footer__contact-time">
                     Прием заказов с <time>10:00</time> до <time>22:40</time>
                 </p>
             </div>
-            <div class="footer-socials">
-                <a href="#" class="footer-socials__item--telegram" target="_blank" aria-label="Перейти в Телеграм">
+            <div class="footer__socials">
+                <a href="#" class="footer__socials-item-telegram" target="_blank" aria-label="Перейти в Телеграм">
                     <svg class = "footer__icon" width="24" height="24">
                         <use href="assets/photo/sprite.svg#footer-socials__item--telegram"></use>
                     </svg>
                 </a>
-                <a href="#" class="footer-socials__item--vk" target="_blank" aria-label="Перейти в ВК">
+                <a href="#" class="footer__socials-item-vk" target="_blank" aria-label="Перейти в ВК">
                     <svg class = "footer__icon" width="24" height="24">
                         <use href="assets/photo/sprite.svg#footer-socials__item--vk"></use>
                     </svg>
                 </a>
-                <a href="#" class="footer-socials__item--whatsapp" target="_blank" aria-label="Перейти в Ватсап">
+                <a href="#" class="footer__socials-item-whatsapp" target="_blank" aria-label="Перейти в Ватсап">
                     <svg class = "footer__icon" width="24" height="24">
                         <use href="assets/photo/sprite.svg#footer-socials__item--whatsapp"></use>
                     </svg>
@@ -446,21 +446,21 @@
                 </svg>
             </a>
             <nav>
-                <ul class="nav__list--footer">
-                    <li><a class="nav__link--footer" href="#menu">Меню</a></li>
-                    <li><a class="nav__link--footer" href="#promo">Акции</a></li>
-                    <li><a class="nav__link--footer" href="#about">О нас</a></li>
-                    <li><a class="nav__link--footer" href="#events">События</a></li>
-                    <li><a class="nav__link--footer" href="#deliver">Зоны доставки</a></li>
+                <ul class="footer__nav-list">
+                    <li><a class="footer__nav-link" href="#menu">Меню</a></li>
+                    <li><a class="footer__nav-link" href="#promo">Акции</a></li>
+                    <li><a class="footer__nav-link" href="#about">О нас</a></li>
+                    <li><a class="footer__nav-link" href="#events">События</a></li>
+                    <li><a class="footer__nav-link" href="#deliver">Зоны доставки</a></li>
                 </ul>
             </nav>
             <div class="footer__markets">
-                <a class="market--app-store" href="#" target="_blank" aria-label="Загрузите в App Store">
+                <a class="footer__market-app-store" href="#" target="_blank" aria-label="Загрузите в App Store">
                     <svg width="138" height="40">
                         <use href="assets/photo/sprite.svg#market--app-store"></use>
                     </svg>
                 </a>
-                <a class="market--google-play" href="#" target="_blank" aria-label="Доступно в Google Play">
+                <a class="footer__market-google-play" href="#" target="_blank" aria-label="Доступно в Google Play">
                     <svg class="google-play__default" width="138" height="40">
                         <use href="assets/photo/sprite.svg#market--google-play"></use>
                     </svg>

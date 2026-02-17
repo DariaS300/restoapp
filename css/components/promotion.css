@@ -17,7 +17,7 @@
 
 .promotion-card__photo {
     height: 22.5rem;
-    width: 44rem;
+    width: 45rem;
     max-width: 100%;
     object-fit: cover;
     border-radius: var(--border-radius-lg);

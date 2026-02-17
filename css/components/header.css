@@ -87,6 +87,7 @@ header.shift-up {
     margin: 0 auto;
     align-items: center;
     padding: 0;
+    gap: var(--gap-md);
 
 }
 

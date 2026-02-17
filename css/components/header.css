@@ -358,6 +358,10 @@ header.shift-up {
 
 @media (max-width: 576px) {
 
+    .nav{
+        background: linear-gradient(to right, #FCD11A, #F9C201);
+    }
+
     .header-wrapper{
         padding-inline: var(--space-sm);}
 

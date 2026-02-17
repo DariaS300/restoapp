@@ -128,3 +128,27 @@ h4 {
     gap: 0.5rem;
     z-index: 2;
 }
+
+@media (max-width: 992px){
+    .promotion-card__title{
+        font-size: var(--font-size-medium);
+        bottom: 2rem;
+        left: 1rem;
+        font-weight: var(--font-weight-bold);
+        color: var(--color-background-primary);
+        line-height: 2.5rem;
+        z-index: 2;
+        margin: 0;
+    }
+
+    .promotion-card__labels{
+        left: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .promotion-card__labels{
+        left: 1rem;
+    }
+}

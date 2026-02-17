@@ -1,4 +1,10 @@
 :root {
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 4rem;
+    
     --color-text-primary: #727272;
     --color-text-secondary: #555555;
     --color-text-muted: #A6A6A6;
@@ -12,8 +18,9 @@
     --color-btn-hover: #E8E8E8;
 
     --layout-wrap-width: 100rem;
-    --layout-container-max-width: 90rem;
+    --layout-container-max-width: 86rem;
     --layout-container-max-width-laptop: 62rem;
+    --layout-header-container-max-width: 82rem;
 
 
     --font-weight-normal: 400;
@@ -32,6 +39,7 @@
 
     --border-radius-sm: 0.25rem;   
     --border-radius-md: 0.5rem;  
-    --border-radius-lg: 1rem;       
+    --border-radius-lg: 1rem;     
+    
 }
 

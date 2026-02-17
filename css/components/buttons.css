@@ -12,8 +12,22 @@
     text-decoration: none;
     font-size: 1.125rem;
     font-weight: var(--font-weight-bold);
+    transition: background-color 0.3s ease;
+    margin-top: auto;
 }
 
 .category-card__newbutton:hover{
-    background: var( --color-btn-hover);
+    background-color: var( --color-btn-hover);
+}
+
+button {
+    cursor: pointer;
+}
+
+
+@media (max-width: 992px) {
+
+    .category-card__newbutton{
+        width: 100%;
+    }
 }

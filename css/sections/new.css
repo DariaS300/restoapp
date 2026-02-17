@@ -1,10 +1,26 @@
 .new_container {
     display: flex;
-    padding-block: 2rem;    
-    padding-inline: 4rem; 
+    padding-block: var(--space-lg);    
+    padding-inline: var(--space-lg); 
     margin: 0;
     flex-direction: column;
     gap: var(--gap-lg);
     align-items: flex-start;
     scroll-margin-top: 7rem;
+}
+
+@media (max-width: 992px) {
+
+    .new_container { 
+        padding-block: var(--space-md);
+        padding-inline: var(--space-md); 
+    }
+}
+
+@media (max-width: 576px) {
+
+    .new_container { 
+        padding-block: var(--space-sm);
+        padding-inline: var(--space-sm); 
+    }
 }

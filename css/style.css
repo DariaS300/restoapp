@@ -1,6 +1,5 @@
 @import url('normalize.css');
 
-@import url('media.css');
 @import url('base/font.css');
 @import url('base/base.css');
 @import url('base/variables.css');
@@ -18,5 +17,3 @@
 @import url('sections/events.css');
 @import url('sections/restaurants.css');
 @import url('sections/footer.css');
-
-@import url('media.css');

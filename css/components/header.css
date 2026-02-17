@@ -65,6 +65,7 @@ header {
 .header-wrapper{
     margin: 0 auto;
     width: 100%;
+    padding-inline: var(--space-lg);
 }
 
 
@@ -86,7 +87,6 @@ header.shift-up {
     margin: 0 auto;
     align-items: center;
     padding: 0;
-    gap: var(--gap-md);
 
 }
 
@@ -137,8 +137,9 @@ header.shift-up {
 .controls {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: space-between;
+    max-width: 8rem;
+    width: 100%;
 }
 
 .controls__link {
@@ -161,7 +162,7 @@ header.shift-up {
     width: 24px;
     height: 24px;
     color:var(--color-background-primary);
-    transition: color 0.2s ease;
+    transition: color 0.3s ease;
 }
 
 .icon-cart:hover{ 
@@ -174,6 +175,7 @@ header.shift-up {
 
 .icon-profile {
     color: var(--color-background-secondary);
+    transition: color 0.3s ease;
 }
 
 .icon-profile:hover{
@@ -212,4 +214,159 @@ header.shift-up {
 
 .contacts__a:hover{
     color: var(--color-background-secondary);
+}
+
+
+@media (max-width: 992px) {
+
+    .header-wrapper{
+        padding-inline: var(--space-md);
+    }
+    .hamburger {
+        display: block;
+        position: relative;
+        padding: 10px;
+        background: transparent;
+        border: 1px solid transparent;
+        margin: 7px 0;
+        top: 50%;
+        z-index: 3003;
+    }
+
+    .hamburger:focus {
+        outline-width: 0;
+      }
+
+    .hamburger [class*='bar-'] {
+        background: var(--color-background-secondary);
+        display: block;
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+        -webkit-transition: .2s ease all;
+        transition: .2s ease all;
+        border-radius: 0.25rem;
+        height: 0.25rem;
+        width: 1.625rem;
+        margin-bottom: 0.25rem;}
+
+    .hamburger .bar-bot {
+        margin-bottom: 0;
+        }
+
+    body.menu-opened  .bar-top {
+        -webkit-transform: rotate(45deg);
+                transform: translateY(2px) rotate(45deg);
+        -webkit-transform-origin: 15% 15%;
+                transform-origin: 15% 15%;
+        background: var(--color-text-secondary);
+    }
+    body.menu-opened .bar-mid {
+        opacity: 0;
+    }
+    body.menu-opened .bar-bot {
+        -webkit-transform: rotate(45deg);
+                transform: translateY(-2px) rotate(-45deg);
+        -webkit-transform-origin: 15% 95%;
+                transform-origin: 15% 95%;
+        background: var(--color-text-secondary);
+
+        
+    }
+    header {
+        position: sticky;
+        z-index: 3001;
+        width: 100%;
+        top: 0;
+        padding-top: 3rem;
+    }
+
+    .banner{
+        z-index: 3003;
+    }
+
+    .nav__right{
+        display: none;
+    }
+
+    .menu {
+        position: fixed;
+        height: 100%;  
+        top: 0px;
+        right: 0px;
+        bottom: 0; 
+        padding: 75px 60px 20px;
+        width: 320px;
+        background-color: #F9C201;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: transform .5s;
+        z-index: 3002;  
+    }
+
+    .menu.shift-up {
+        top: 0;
+    }
+
+    .nav__list{
+        display: block;
+        padding: 20px;
+        margin: 0;
+        z-index: 3000;
+    }
+
+
+    .nav__link{
+        display: block;
+        padding: 20px 0px;
+        text-align: left;
+        font-size: var(--font-size-base);
+        transition: transform 0.25s ease;
+    }
+
+    .nav__link:hover{
+        color: var(--color-background-secondary);
+    }
+    .nav__link:focus{
+        transform: scale(1.05); 
+    }
+    .nav__link:focus{
+        text-decoration: underline;
+    }
+
+    body.menu-opened .menu{
+        transform: translateX(0);
+        opacity: 1;
+    } 
+    .nav__list--footer{
+        flex-direction: column;
+        gap: var(--gap-md)
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    .banner__text{
+        font-size: var(--font-size-base);
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .header-wrapper{
+        padding-inline: var(--space-sm);}
+
+    .banner__text{
+        margin: 1rem;
+        margin-right: 0;
+    }
+    .nav__list--footer{
+        flex-direction: column;
+        gap: var(--gap-sm)
+
+    }
+
 }

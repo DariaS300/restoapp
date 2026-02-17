@@ -1,4 +1,4 @@
-.restaurants{
+.restaurants_container{
     display: flex;
     padding-block: var(--space-lg) var(--space-xl);    
     padding-inline: var(--space-lg); 
@@ -15,14 +15,14 @@
 
 @media (max-width: 992px) {
 
-    .restaurants { 
+    .restaurants_container { 
         padding-block: var(--space-md);
         padding-inline: var(--space-md); 
     }
 }
 @media (max-width: 576px) {
 
-    .restaurants { 
+    .restaurants_container { 
         padding-block: var(--space-sm);
         padding-inline: var(--space-sm); 
     }

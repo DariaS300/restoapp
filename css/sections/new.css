@@ -1,4 +1,4 @@
-.new {
+.new_container {
     display: flex;
     padding-block: var(--space-lg);    
     padding-inline: var(--space-lg); 
@@ -11,7 +11,7 @@
 
 @media (max-width: 992px) {
 
-    .new { 
+    .new_container { 
         padding-block: var(--space-md);
         padding-inline: var(--space-md); 
     }
@@ -19,7 +19,7 @@
 
 @media (max-width: 576px) {
 
-    .new { 
+    .new_container { 
         padding-block: var(--space-sm);
         padding-inline: var(--space-sm); 
     }

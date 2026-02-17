@@ -76,7 +76,7 @@ body.no-banner-padding {
     position: relative;
 }
 
-.header-container{
+.container-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,7 +106,7 @@ picture {
     .container {
         padding-inline: var(--space-md); 
     }
-    
+}
     body {
         overflow-x: hidden;
     }

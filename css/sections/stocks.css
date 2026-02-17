@@ -1,4 +1,4 @@
-.stocks{
+.stocks_container{
     display: flex;
     padding-block: var(--space-lg);    
     padding-inline: var(--space-lg); 
@@ -15,7 +15,7 @@
 
 @media (max-width: 992px) {
 
-    .stocks { 
+    .stocks_container { 
         padding-block: var(--space-md);
         padding-inline: var(--space-md); 
     }
@@ -23,7 +23,7 @@
 
 @media (max-width: 576px) {
 
-    .stocks { 
+    .stocks_container { 
         padding-block: var(--space-sm);
         padding-inline: var(--space-sm); 
     }

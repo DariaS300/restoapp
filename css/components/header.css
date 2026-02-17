@@ -304,6 +304,7 @@ header.shift-up {
         opacity: 0;
         transition: transform .5s;
         z-index: 3002;  
+        overflow-y: auto; 
     }
 
     .nav.shift-up {

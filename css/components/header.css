@@ -179,7 +179,7 @@ header.shift-up {
     transition: color 0.3s ease;
 }
 
-.icon-profile:hover{
+.icon-profile:hover svg{
     color: var(--color-background-primary);
 }
 
